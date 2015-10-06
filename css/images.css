@@ -1,0 +1,14 @@
+
+/*images*/
+.blur{
+	-webkit-filter: blur(10px); -moz-filter: blur(10px); -o-filter: blur(10px); -ms-filter: blur(10px); filter: blur(10px);
+}
+.s1{
+    background: url(../img/stock-photo-grandparents-with-grandchildren-on-walk-in-countryside-208005724.jpg) no-repeat bottom center scroll;
+}
+.s2{
+    background: url(../img/shutterstock_469183.jpg) no-repeat bottom center scroll;
+}
+.s3{
+    background: url(../img/appleHongKong.jpg) no-repeat bottom center scroll;
+}
