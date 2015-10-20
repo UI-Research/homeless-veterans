@@ -5,6 +5,9 @@ var initialload = true;
 $( document ).ready(function() {
 
 
+L.mapbox.accessToken = 'pk.eyJ1IjoidXJiYW5pbnN0aXR1dGUiLCJhIjoiTEJUbmNDcyJ9.mbuZTy4hI_PWXw3C3UFbDQ';
+var map = L.mapbox.map('map', 'urbaninstitute.nok9p4i6');
+
 
 	$("div.slide").each(function(i){
 		$(this).attr("id", "slide_" + i);
@@ -12,10 +15,10 @@ $( document ).ready(function() {
 	})
 	$("div.slide").each(function(index){
 	})
-
+    
 	if (QueryString.slide){
-		initialload=false;
 		gotoslide(QueryString.slide);
+        initialload=false;
 	}else{
 		gotoslide(0);
 	}
@@ -53,7 +56,6 @@ function gotoslide(index){
 // update URL
 var newURL = updateURLParameter(window.location.href, 'slide', index);
 newURL = updateURLParameter(newURL, 'slide', index);
-console.log(newURL);
 
 var stateObj = { foo: "Veterans" };
 history.pushState(stateObj, "Urban Institute Veterans Feature", newURL);

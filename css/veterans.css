@@ -43,14 +43,21 @@ ul{
  text-align: left;
     font-size: 1.25em;
 }
-
+.caption{
+    font-size: 0.8em;
+    vertical-align: bottom;
+}
 .chart{
  width:100%;
  /*max-width:700px;*/
  margin:0 auto;
-
+ margin-bottom: 15px;
+/*padding:15px;*/
 }
 
+.chart-column{
+/*padding:0;*/
+}
 .text-swatch{
     color:#fff;
     padding-left: 4px;
@@ -113,7 +120,7 @@ a:focus {
     min-height: 100%;
     width: auto;
     height: auto;
-    z-index: 9;
+    z-index: 0;
     background-size: cover;
 }
 
@@ -180,6 +187,7 @@ a:focus {
 .slide .intro-body {
     display: table-cell;
     vertical-align: middle;
+    z-index: 20;
 }
 
 .slide .intro-body .brand-heading {
@@ -188,6 +196,7 @@ a:focus {
 
 .slide .intro-body .intro-text {
     font-size: 18px;
+    text-shadow: #000 3px 3px 7px;
 }
 
 .slide .byline-text{
@@ -250,6 +259,37 @@ top:25%;
     border-radius: 0px;
 }
 
+.chapter-nav{
+    position: fixed;
+    right: 150px;
+    bottom: 20px;
+    z-index: 12;
+}
+.chapter-nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.chapter-nav li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.chapter-nav a{
+    text-decoration: none;
+    color:#fff;
+    background-color: rgba(0,0,0,0.5);
+    padding: 4px;
+}
+.chapter-nav a:hover{
+    background-color: #1696d2;
+}
+
+.chapter-active{
+    border-bottom: 4px solid #1696d2;
+}
+
 .next-back{
     position: fixed;
     right: 20px;
@@ -280,7 +320,7 @@ top:25%;
 
 .audio{
     position: absolute;
-    bottom:20px;
+    bottom:50px;
 }
 .audio-slide{
     height: 100%;
@@ -295,7 +335,23 @@ top:25%;
     /*width:100%;*/
 
 }
-
+#map { height: 100%; width:100%; }
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.video-four{
+    padding-bottom:26.5%;
+}
 .block-text{
     background-color: rgba(0,0,0,0.75);
     padding:20px;
