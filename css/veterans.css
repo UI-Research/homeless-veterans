@@ -279,8 +279,9 @@ top:25%;
 .chapter-nav a{
     text-decoration: none;
     color:#fff;
-    background-color: rgba(0,0,0,0.5);
-    padding: 4px;
+    background-color: rgba(0,0,0,0.3);
+    padding: 5px;
+    cursor: pointer;
 }
 .chapter-nav a:hover{
     background-color: #1696d2;
@@ -320,7 +321,7 @@ top:25%;
 
 .audio{
     position: absolute;
-    bottom:50px;
+    bottom:75px;
 }
 .audio-slide{
     height: 100%;
@@ -360,6 +361,17 @@ top:25%;
     width:350px;
     font-size: 14px;
 }
+
+.ap{
+    background: none !important;
+    text-shadow:#000 2px 2px 4px;
+}
+
+.credit{
+    font-family: Georgia, serif;
+    font-style: italic;
+}
+
 
 .bottom{
     bottom:60px;

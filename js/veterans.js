@@ -2,30 +2,32 @@ var slide = 0;
 var numSlides;
 var initialload = true;
 
+var chapterBreaks = [2,6,7,9]
+
 $( document ).ready(function() {
 
 
-L.mapbox.accessToken = 'pk.eyJ1IjoidXJiYW5pbnN0aXR1dGUiLCJhIjoiTEJUbmNDcyJ9.mbuZTy4hI_PWXw3C3UFbDQ';
-var map = L.mapbox.map('map', 'urbaninstitute.nok9p4i6');
+    L.mapbox.accessToken = 'pk.eyJ1IjoidXJiYW5pbnN0aXR1dGUiLCJhIjoiTEJUbmNDcyJ9.mbuZTy4hI_PWXw3C3UFbDQ';
+    var map = L.mapbox.map('map', 'urbaninstitute.nok9p4i6');
 
 
-	$("div.slide").each(function(i){
-		$(this).attr("id", "slide_" + i);
-		numSlides = i;
-	})
-	$("div.slide").each(function(index){
-	})
-    
-	if (QueryString.slide){
-		gotoslide(QueryString.slide);
-        initialload=false;
-	}else{
-		gotoslide(0);
-	}
+    $("div.slide").each(function(i){
+      $(this).attr("id", "slide_" + i);
+      numSlides = i;
+  })
+    $("div.slide").each(function(index){
+    })
+
+    if (QueryString.slide){
+      gotoslide(QueryString.slide);
+      initialload=false;
+  }else{
+      gotoslide(0);
+  }
 });
 
 function gotoslide(index){
-	console.log("index is " + index);
+	// console.log("index is " + index);
 	if (index == 0){
 		$(".next-back").addClass("btn-hidden");
 		if (initialload){
@@ -37,28 +39,56 @@ function gotoslide(index){
 		$(".next-back").removeClass("btn-hidden");
 	}
 
+        var currentSlide = parseInt($( "div.slide.active" ).attr('id').split("_")[1]);
+
+if (currentSlide == index){return;}
 
 	$( "div.slide.active" ).addClass("transition");
 
-	var currentSlide = parseInt($( "div.slide.active" ).attr('id').split("_")[1]);
 
-	// console.log(currentSlide);
 
 	$('#slide_'+index).addClass("active");
 	$( "div.slide.active.transition" ).removeClass("active");
 	$( "div.slide.transition" ).removeClass("transition");
+
 	if (index == numSlides){
 		$("#next-btn").addClass("btn-hidden");
 	}else{
 		$("#next-btn").removeClass("btn-hidden");
 	}
 
-// update URL
-var newURL = updateURLParameter(window.location.href, 'slide', index);
-newURL = updateURLParameter(newURL, 'slide', index);
+    // update URL
+    var newURL = updateURLParameter(window.location.href, 'slide', index);
+    newURL = updateURLParameter(newURL, 'slide', index);
 
-var stateObj = { foo: "Veterans" };
-history.pushState(stateObj, "Urban Institute Veterans Feature", newURL);
+    var stateObj = { foo: "Veterans" };
+    history.pushState(stateObj, "Urban Institute Veterans Feature", newURL);
+
+    //chapter navigation
+    if ((index >= chapterBreaks[0]) && (index < chapterBreaks[1])){ //chapter 1
+        $(".chapter1").addClass("chapter-active");
+        if ($( ".chapter2" ).hasClass( "chapter-active" )){$(".chapter2").removeClass("chapter-active");}
+        if ($( ".chapter3" ).hasClass( "chapter-active" )){$(".chapter3").removeClass("chapter-active");}
+        if ($( ".chapter4" ).hasClass( "chapter-active" )){$(".chapter4").removeClass("chapter-active");}
+    }
+    else if ((index >= chapterBreaks[1]) && (index < chapterBreaks[2])){ //chapter 2
+        $(".chapter2").addClass("chapter-active");
+        if ($( ".chapter1" ).hasClass( "chapter-active" )){$(".chapter1").removeClass("chapter-active");}
+        if ($( ".chapter3" ).hasClass( "chapter-active" )){$(".chapter3").removeClass("chapter-active");}
+        if ($( ".chapter4" ).hasClass( "chapter-active" )){$(".chapter4").removeClass("chapter-active");}
+    }
+    else if ((index >= chapterBreaks[2]) && (index < chapterBreaks[3])){ //chapter 3
+        $(".chapter3").addClass("chapter-active");
+        if ($( ".chapter1" ).hasClass( "chapter-active" )){$(".chapter1").removeClass("chapter-active");}
+        if ($( ".chapter2" ).hasClass( "chapter-active" )){$(".chapter2").removeClass("chapter-active");}
+        if ($( ".chapter4" ).hasClass( "chapter-active" )){$(".chapter4").removeClass("chapter-active");}
+    }
+    else if (index >= chapterBreaks[3]){ //chapter 4
+        $(".chapter4").addClass("chapter-active");
+        if ($( ".chapter1" ).hasClass( "chapter-active" )){$(".chapter1").removeClass("chapter-active");}
+        if ($( ".chapter3" ).hasClass( "chapter-active" )){$(".chapter3").removeClass("chapter-active");}
+        if ($( ".chapter2" ).hasClass( "chapter-active" )){$(".chapter2").removeClass("chapter-active");}
+    }
 }
 
 
@@ -95,6 +125,18 @@ $("#start-btn").click(function (){
 	gotoslide(1);
 });
 
+$(".chapter1").click(function (){
+    gotoslide(chapterBreaks[0]);
+});
+$(".chapter2").click(function (){
+    gotoslide(chapterBreaks[1]);
+});
+$(".chapter3").click(function (){
+    gotoslide(chapterBreaks[2]);
+});
+$(".chapter4").click(function (){
+    gotoslide(chapterBreaks[3]);
+});
 
 var QueryString = function () {
   // This function is anonymous, is executed immediately and 
@@ -134,7 +176,7 @@ function updateURLParameter(url, param, paramVal)
     {
         var tmpAnchor = additionalURL.split("#");
         var TheParams = tmpAnchor[0];
-            TheAnchor = tmpAnchor[1];
+        TheAnchor = tmpAnchor[1];
         if(TheAnchor)
             additionalURL = TheParams;
 
@@ -153,7 +195,7 @@ function updateURLParameter(url, param, paramVal)
     {
         var tmpAnchor = baseURL.split("#");
         var TheParams = tmpAnchor[0];
-            TheAnchor  = tmpAnchor[1];
+        TheAnchor  = tmpAnchor[1];
 
         if(TheParams)
             baseURL = TheParams;
