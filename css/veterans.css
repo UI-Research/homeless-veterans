@@ -299,6 +299,9 @@ top:25%;
     width:115px;
 }
 
+#top-nav-title{
+    cursor: pointer;
+}
 #next-btn{
     position: absolute;
     right: 0;

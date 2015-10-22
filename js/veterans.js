@@ -138,6 +138,10 @@ $(".chapter4").click(function (){
     gotoslide(chapterBreaks[3]);
 });
 
+$("#top-nav-title").click(function(){
+    gotoslide(0);
+})
+
 var QueryString = function () {
   // This function is anonymous, is executed immediately and 
   // the return value is assigned to QueryString!
