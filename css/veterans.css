@@ -339,7 +339,12 @@ top:25%;
     /*width:100%;*/
 
 }
-#map { height: 100%; width:100%; }
+#map { height: 100%; width:100%; min-height: 1000px; }
+
+.leaflet-top .leaflet-control {
+    margin-top: 67px !important;
+}
+
 .video-wrapper {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 */
