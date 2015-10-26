@@ -1,14 +1,59 @@
 
 /*images*/
 .blur{
-	-webkit-filter: blur(10px); -moz-filter: blur(10px); -o-filter: blur(10px); -ms-filter: blur(10px); filter: blur(10px);
+	-webkit-filter: blur(15px); -moz-filter: blur(15px); -o-filter: blur(15px); -ms-filter: blur(15px); filter: blur(15px);
+	opacity:0.7;
 }
-.s1{
-    background: url(../img/stock-photo-grandparents-with-grandchildren-on-walk-in-countryside-208005724.jpg) no-repeat bottom center scroll;
-}
+.s1{background: url(../img/stock-photo-grandparents-with-grandchildren-on-walk-in-countryside-208005724.jpg) no-repeat bottom center scroll;}
 .s2{
-    background: url(../img/shutterstock_469183.jpg) no-repeat bottom center scroll;
+	background: url(../img/shutterstock_469183.jpg) no-repeat bottom center scroll;
 }
 .s3{
-    background: url(../img/appleHongKong.jpg) no-repeat bottom center scroll;
+	background: url(../img/appleHongKong.jpg) no-repeat bottom center scroll;
 }
+
+
+.title-slide{background: url(../img/001-20151007_VHPD_Thompson_0181-edit.jpg) no-repeat bottom center scroll;}
+.introduction{background: url(../img/001-20151007_VHPD_Thompson_0181-edit.jpg) no-repeat bottom center scroll;}
+.ch-1-title{background: url(../img/ch-1-title.jpg) no-repeat bottom center scroll;}
+.jannet-intro{background: url(../img/002-20151008_VHPD_Thompson_0640-edit.jpg) no-repeat bottom center scroll;}
+.jannet-intro-audio{background: url(../img/002-20151008_VHPD_Thompson_0640-edit.jpg) no-repeat bottom center scroll;}
+.jannet-house{background: url(../img/003-20151008_VHPD_Thompson_0632-edit.jpg) no-repeat bottom center scroll;}
+.jannet-house-text{background: url(../img/003-20151008_VHPD_Thompson_0632-edit.jpg) no-repeat bottom center scroll;}
+.ap-vets{background: url(../img/004-AP_111110086647.jpg) no-repeat bottom center scroll;}
+.ap-vets-text{background: url(../img/004-AP_111110086647.jpg) no-repeat bottom center scroll;}
+.ap-women-text{background: url(../img/005-AP_855468913912.jpg) no-repeat bottom center scroll;}
+.ap-women {background: url(../img/005-AP_855468913912.jpg) no-repeat bottom center scroll;}
+.ap-silhouette-graph{background: url(../img/006-AP_802187699213.jpg) no-repeat bottom center scroll;}
+.ap-silhouette-text{background: url(../img/006-AP_802187699213.jpg) no-repeat bottom center scroll;}
+.ch-2-title{background: url(../img/ch-2-title.jpg) no-repeat bottom center scroll;}
+.VA-audio{background: url(../img/007-20151007_VHPD_Thompson_0002-edit.jpg) no-repeat bottom center scroll;}
+.VA-caption{background: url(../img/007-20151007_VHPD_Thompson_0002-edit.jpg) no-repeat bottom center scroll;}
+.AP-shinseki-audio{background: url(../img/008-AP_833566935826.jpg) no-repeat bottom center scroll;}
+.AP-shinseki-text{background: url(../img/008-AP_833566935826.jpg) no-repeat bottom center scroll;}
+.AP-Donovan-text{background: url(../img/0082-AP-ShaunDonovan.jpg) no-repeat bottom center scroll;}
+.AP-Donovan{background: url(../img/0082-AP-ShaunDonovan.jpg) no-repeat bottom center scroll;}
+.VHPD-map{background: url(../img/VHPD-US-Map.jpg) no-repeat bottom center scroll;}
+.WH-Obama{background: url(../img/009-5229572281_f2cb601685_o.jpg) no-repeat bottom center scroll;}
+.WH-Obama-text{background: url(../img/009-5229572281_f2cb601685_o.jpg) no-repeat bottom center scroll;}
+.ch-3-title{background: url(../img/ch-3-title.jpg) no-repeat bottom center scroll;}
+.Jannet-VA-audio{background: url(../img/010-20151007_VHPD_Thompson_0127-edit.jpg) no-repeat bottom center scroll;}
+.tx-landscape-text{background: url(../img/011-20151008_VHPD_Thompson_0287.jpg) no-repeat bottom center scroll;}
+.tx-map{background: url(../img/VHPD-Texas-Map.jpg) no-repeat bottom center scroll;}
+.jannet-comp-caption{background: url(../img/012-20151007_VHPD_Thompson_0162-edit.jpg) no-repeat bottom center scroll;}
+.home-caption{background: url(../img/013-20151008_VHPD_Thompson_0685-edit.jpg) no-repeat bottom center scroll;}
+.jannet-store-caption{background: url(../img/014-20151008_VHPD_Thompson_0447-edit.jpg) no-repeat bottom center scroll;}
+.jannet-hand-caption{background: url(../img/015-20151008_VHPD_Thompson_0529-edit.jpg) no-repeat bottom center scroll;}
+.jannet-hall-caption{background: url(../img/016-20151007_VHPD_Thompson_0103-edit.jpg) no-repeat bottom center scroll;}
+.jannet-photos-caption{background: url(../img/017-20151007_VHPD_Thompson_0263-edit.jpg) no-repeat bottom center scroll;}
+.outer-VA-text{background: url(../img/018-20151007_VHPD_Thompson_0056-edit.jpg) no-repeat bottom center scroll;}
+.interview-videos{background: url(../img/018-20151007_VHPD_Thompson_0056-edit.jpg) no-repeat bottom center scroll;}
+.tx-road-caption{background: url(../img/0182-20151008_VHPD_Thompson_0588-edit.jpg) no-repeat bottom center scroll;}
+.ch-4-title{background: url(../img/ch-4-title.jpg) no-repeat bottom center scroll;}
+.jannet-keyboard-caption{background: url(../img/019-20151007_VHPD_Thompson_0077-edit.jpg) no-repeat bottom center scroll;}
+.jannet-work-caption{background: url(../img/020-20151007_VHPD_Thompson_0099-edit.jpg) no-repeat bottom center scroll;}
+.jannet-car-caption{background: url(../img/021-20151008_VHPD_Thompson_0569-edit.jpg) no-repeat bottom center scroll;}
+.??????{background: url(../img/) no-repeat bottom center scroll;}
+.??????{background: url(../img/023-20151007_VHPD_Thompson_0186.jpg) no-repeat bottom center scroll;}
+.jannet-daughter-text{background: url(../img/023-20151007_VHPD_Thompson_0186.jpg) no-repeat bottom center scroll;}
+.credits{background: url(../img/022-20151008_VHPD_Thompson_0588-edit.jpg) no-repeat bottom center scroll;}
