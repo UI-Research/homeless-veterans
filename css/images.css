@@ -4,13 +4,10 @@
 	-webkit-filter: blur(15px); -moz-filter: blur(15px); -o-filter: blur(15px); -ms-filter: blur(15px); filter: blur(15px);
 	opacity:0.7;
 }
-.s1{background: url(../img/stock-photo-grandparents-with-grandchildren-on-walk-in-countryside-208005724.jpg) no-repeat bottom center scroll;}
-.s2{
-	background: url(../img/shutterstock_469183.jpg) no-repeat bottom center scroll;
+.darker{
+opacity: 0.3;
 }
-.s3{
-	background: url(../img/appleHongKong.jpg) no-repeat bottom center scroll;
-}
+
 
 
 .title-slide{background: url(../img/001-20151007_VHPD_Thompson_0181-edit.jpg) no-repeat bottom center scroll;}
