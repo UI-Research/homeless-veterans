@@ -43,6 +43,27 @@ ul{
  text-align: left;
     font-size: 1.25em;
 }
+
+#start-btn{
+        background: none;
+    border: 2px solid #fff;
+    padding: 10px 30px 10px 30px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 300;
+
+    margin-top:10%;
+}
+#start-btn:hover{
+    background:#000;
+}
+
+.read-research{
+        position: fixed;
+    bottom: 100px;
+    left: 20%;
+    right:20%;
+}
 .caption{
     font-size: 0.8em;
     vertical-align: bottom;
@@ -191,9 +212,13 @@ a:focus {
 }
 
 .slide .intro-body .brand-heading {
-    font-size: 36px;
+    font-size: 5em;
+    font-weight: 300;
 }
-
+.subtitle{
+    font-size: 3em;
+    font-weight: 300;
+}
 .slide .intro-body .intro-text {
     font-size: 18px;
     text-shadow: #000 3px 3px 7px;
@@ -212,6 +237,10 @@ a:focus {
     .slide .intro-body .brand-heading {
         font-size: 30pt;
     }
+
+    .subtitle{
+        font-size: 20pt;
+    }
 p{font-size: 14px;}
     .slide .intro-body .intro-text {
         font-size: 14px;
@@ -223,19 +252,36 @@ min-height: auto;
 bottom: auto;
 top:25%;
     }
+
+    .chapter-nav{
+        display: none;
+    }
+
+    .audio{
+        width: 90%;
+    }
+
+    .map-frame{
+        display: none;
+    }
+
+    .full-screen{
+        display: none;
+    }
 }
 
 .btn-primary{
     font-family: 'Lato';
-     background-color:#1696d2;
+     background-color:#000;
     border-radius: 0;
     border: none;
     font-weight: 300;
     padding: 12px;  
+    font-size: 14px;
 }
 
 .btn-primary:hover{
-    background-color: #000;
+    background-color: #1696d2;
 }
 
 
@@ -247,12 +293,18 @@ top:25%;
     }
 
     .slide .intro-body .brand-heading {
-        font-size: 36pt;
+        font-size: 5em;
+        font-weight: 300;
     }
 
     .slide .intro-body .intro-text {
         font-size: 20px;
     }
+
+    .subtitle{
+    font-size: 2em;
+    font-weight: 300;
+}
 }
 
 .btn-lg{

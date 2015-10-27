@@ -2,14 +2,10 @@ var slide = 0;
 var numSlides;
 var initialload = true;
 
-var chapterBreaks = [2,15,18,19]
+
+var chapterBreaks = [2,15,25,40]
 
 $( document ).ready(function() {
-
-
-    L.mapbox.accessToken = 'pk.eyJ1IjoidXJiYW5pbnN0aXR1dGUiLCJhIjoiTEJUbmNDcyJ9.mbuZTy4hI_PWXw3C3UFbDQ';
-    var map = L.mapbox.map('map', 'urbaninstitute.nok9p4i6');
-
 
     $("div.slide").each(function(i){
       $(this).attr("id", "slide_" + i);
@@ -62,29 +58,40 @@ if (currentSlide == index){return;}
     newURL = updateURLParameter(newURL, 'slide', index);
 
     var stateObj = { foo: "Veterans" };
-    history.pushState(stateObj, "Urban Institute Veterans Feature", newURL);
+    history.pushState(stateObj, "Homeless on the Home Front", newURL);
 
     //chapter navigation
-    if ((index >= chapterBreaks[0]) && (index < chapterBreaks[1])){ //chapter 1
+    if (index == 0){ //home
+        $(".chapter0").addClass("chapter-active");
+        if ($( ".chapter1" ).hasClass( "chapter-active" )){$(".chapter2").removeClass("chapter-active");}
+        if ($( ".chapter2" ).hasClass( "chapter-active" )){$(".chapter2").removeClass("chapter-active");}
+        if ($( ".chapter3" ).hasClass( "chapter-active" )){$(".chapter3").removeClass("chapter-active");}
+        if ($( ".chapter4" ).hasClass( "chapter-active" )){$(".chapter4").removeClass("chapter-active");}
+    }
+    else if ((index >= chapterBreaks[0]) && (index < chapterBreaks[1])){ //chapter 1
         $(".chapter1").addClass("chapter-active");
+        if ($( ".chapter0" ).hasClass( "chapter-active" )){$(".chapter0").removeClass("chapter-active");}
         if ($( ".chapter2" ).hasClass( "chapter-active" )){$(".chapter2").removeClass("chapter-active");}
         if ($( ".chapter3" ).hasClass( "chapter-active" )){$(".chapter3").removeClass("chapter-active");}
         if ($( ".chapter4" ).hasClass( "chapter-active" )){$(".chapter4").removeClass("chapter-active");}
     }
     else if ((index >= chapterBreaks[1]) && (index < chapterBreaks[2])){ //chapter 2
         $(".chapter2").addClass("chapter-active");
+        if ($( ".chapter0" ).hasClass( "chapter-active" )){$(".chapter0").removeClass("chapter-active");}
         if ($( ".chapter1" ).hasClass( "chapter-active" )){$(".chapter1").removeClass("chapter-active");}
         if ($( ".chapter3" ).hasClass( "chapter-active" )){$(".chapter3").removeClass("chapter-active");}
         if ($( ".chapter4" ).hasClass( "chapter-active" )){$(".chapter4").removeClass("chapter-active");}
     }
     else if ((index >= chapterBreaks[2]) && (index < chapterBreaks[3])){ //chapter 3
         $(".chapter3").addClass("chapter-active");
+        if ($( ".chapter0" ).hasClass( "chapter-active" )){$(".chapter0").removeClass("chapter-active");}
         if ($( ".chapter1" ).hasClass( "chapter-active" )){$(".chapter1").removeClass("chapter-active");}
         if ($( ".chapter2" ).hasClass( "chapter-active" )){$(".chapter2").removeClass("chapter-active");}
         if ($( ".chapter4" ).hasClass( "chapter-active" )){$(".chapter4").removeClass("chapter-active");}
     }
     else if (index >= chapterBreaks[3]){ //chapter 4
         $(".chapter4").addClass("chapter-active");
+        if ($( ".chapter0" ).hasClass( "chapter-active" )){$(".chapter0").removeClass("chapter-active");}
         if ($( ".chapter1" ).hasClass( "chapter-active" )){$(".chapter1").removeClass("chapter-active");}
         if ($( ".chapter3" ).hasClass( "chapter-active" )){$(".chapter3").removeClass("chapter-active");}
         if ($( ".chapter2" ).hasClass( "chapter-active" )){$(".chapter2").removeClass("chapter-active");}
@@ -125,6 +132,9 @@ $("#start-btn").click(function (){
 	gotoslide(1);
 });
 
+$(".chapter0").click(function (){
+    gotoslide(0);
+});
 $(".chapter1").click(function (){
     gotoslide(chapterBreaks[0]);
 });

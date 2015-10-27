@@ -34,6 +34,13 @@
         font-weight: 400;
         text-decoration: none;
 }
+
+#header-pinned a{
+      -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
+
+}
     
     #header-pinned .site-logo {
         display: block;

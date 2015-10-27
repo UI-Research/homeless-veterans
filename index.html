@@ -25,7 +25,7 @@
     <meta property="og:url" content="http://datatools.urban.org/TPC-styleguide/index.html">
 
 
-    <title>Veterans feature</title>
+    <title>Homeless on the Home Front</title>
     <link rel="icon" target="_blank" href="favicon.ico" type="image/x-icon">
 
     <!-- Bootstrap Core CSS -->
@@ -96,6 +96,7 @@
     <div class="about"><a href="#">About</a></div>
     <div class="chapter-nav">
         <ul>
+          <li><a class="chapter0 chapter-active">Home</a></li>
           <li><a class="chapter1">Struggling for Security</a></li>
           <li><a class="chapter2">Seeking Help</a></li>
           <li><a class="chapter3">Success in Texas</a></li>
@@ -117,30 +118,28 @@
 
         <!-- title slide -->
         <div class="slide active" >
-            <div class="image title-slide"></div>
+            <div class="image title-slide darker"></div>
             <div class="intro-body">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
+                        <div class="col-md-12">
                             <h1 class="brand-heading text-center">Homeless on the Home Front</h1>
-                            <p class="byline-text">Lorem ipsum</p>
-                            <p class="intro-text subtitle">A Demonstration Program Shows Promise for Ending Veteran's Homelessness
+                            <p class="subtitle text-center">A Demonstration Program Shows Promise for Ending Veteran's Homelessness
                             </p>
 
-                            <p class="text-center">
-                                <a href="#" class="read-research">READ THE RESEARCH</a>
-                            </p>
 
 
                             <p class="text-center">
-                                <a id="start-btn" href="#"><button class="btn-lg">START</button></a>
+                                <a  href="#"><button id="start-btn" class="btn-lg">START</button></a>
                             </p>
-                            
+
                         </div>
                     </div>
                 </div>
+                <p class="text-center">
+                                <a href="#" class="read-research"><button id="research-btn" class="btn-primary">READ THE RESEARCH</button></a>
+                            </p>
             </div>
-          
         </div>
 
         <!-- intro -->
@@ -220,7 +219,7 @@ The Urban Institute evaluated VHPD and found the outcomes for the 509 study part
                 <div class="container audio-slide">
                     <div class="row audio-slide" >
                         <div class="col-md-8 col-md-offset-2 audio-slide">
-                               <iframe class="audio" width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/230191022%3Fsecret_token%3Ds-fUYLJ&amp;color=1696d2&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false"></iframe>
+                               <iframe class="audio" width="100%" height="110" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/230191022%3Fsecret_token%3Ds-fUYLJ&amp;color=1696d2&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;default_height=110&amp;show_artwork=false&amp;font=Lato&amp;theme_color=000000"></iframe>
                         </div>
                     </div>
                 </div>
@@ -278,25 +277,7 @@ The Urban Institute evaluated VHPD and found the outcomes for the 509 study part
             </div>
         </div>
 
-         <!-- ap-women -->
-        <div class="slide" >
-            <div class="image ap-women blur"></div>
-            <div class="intro-body">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
-                            <p class="intro-text">Similarly more women veterans are becoming homeless. HUD data show that in 2013, an additional 1,891 women veterans received emergency shelter or transitional housing services. 
-</p><p class="intro-text">
-And homeless women veterans face unique obstacles to stable housing, such as a higher risk of experiencing sexual trauma while in the military.
-</p><p class="intro-text">
-These trends reflect the large increase in women who joined the military over the last decade. The Government Accountability Office estimates that approximately 1.8 million — or 8 percent — of veterans are now women.
 
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <!-- ap-women -->
         <div class="slide " >
@@ -477,7 +458,7 @@ The Labor Department did not provide specific VHPD funding but still served enro
         <!-- interactive map slide v2 -->
         <div class="slide" >
             <div class="image VHPD-map" style="min-height=1000px; height=100%">
-                <iframe width="100%" height="100%" frame-border="none" src="https://api.mapbox.com/v4/urbaninstitute.nok9p4i6/zoompan.html?access_token=pk.eyJ1IjoidXJiYW5pbnN0aXR1dGUiLCJhIjoiTEJUbmNDcyJ9.mbuZTy4hI_PWXw3C3UFbDQ" style="top:  50px; position: fixed;"></iframe>
+                <iframe class="map-frame" width="100%" height="100%" frame-border="none" src="https://api.mapbox.com/v4/urbaninstitute.nok9p4i6/zoompan.html?access_token=pk.eyJ1IjoidXJiYW5pbnN0aXR1dGUiLCJhIjoiTEJUbmNDcyJ9.mbuZTy4hI_PWXw3C3UFbDQ" style="top:  50px; position: fixed;"></iframe>
             </div>
             <div class="intro-body">
                 <div class="container">
@@ -583,7 +564,7 @@ Within the region’s borders stands Fort Hood, a massive 214,000 acre base that
         <!-- tx-map interactive map slide v2 -->
         <div class="slide" >
             <div class="image tx-map" style="min-height=1000px; height=100%">
-                <iframe width="100%" height="100%" frame-border="none" src="https://api.mapbox.com/v4/urbaninstitute.noceobji/zoompan.html?access_token=pk.eyJ1IjoidXJiYW5pbnN0aXR1dGUiLCJhIjoiTEJUbmNDcyJ9.mbuZTy4hI_PWXw3C3UFbDQ" style="top:  50px; position: fixed;"></iframe>
+                <iframe  class="map-frame" width="100%" height="100%" frame-border="none" src="https://api.mapbox.com/v4/urbaninstitute.noceobji/zoompan.html?access_token=pk.eyJ1IjoidXJiYW5pbnN0aXR1dGUiLCJhIjoiTEJUbmNDcyJ9.mbuZTy4hI_PWXw3C3UFbDQ" style="top:  50px; position: fixed;"></iframe>
             </div>
             <div class="intro-body">
                 <div class="container">
@@ -727,6 +708,46 @@ The agencies also worked together to develop a plan for each enrolled veteran, w
             </div>
         </div>
 
+        <div class="slide" >
+            <div class="image tx-road-caption blur"></div>
+            <div class="intro-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 center-block-text">
+                            <div class="col-sm-3">
+                                <h3>Good Outcomes</h3>
+                                <p class="">Looking outside of Texas, VHPD prompted successful housing outcomes at all other sites.</p>
+                                <img class="chart" src="graphics/status-entry-exit-01.png">
+                            </div>
+                            <div class="col-sm-3 chart-column">
+                                <img class="chart" src="graphics/status-entry-exit-02.png">
+                            </div>
+                            <div class="col-sm-3 chart-column">
+                                <img  class="chart" src="graphics/status-entry-exit-03.png">
+                            </div>
+                            <div class="col-sm-3 chart-column">
+                                <img class="chart" src="graphics/status-entry-exit-04.png">
+                            </div>
+                            <div class="col-sm-3 chart-column">
+                                <img  class="chart" src="graphics/status-entry-exit-05.png">
+                            </div>
+                            <div class="col-sm-3 chart-column">
+                                <img class="chart" src="graphics/status-entry-exit-06.png">
+                            </div>
+                            <div class="col-sm-3 chart-column">
+                                <img  class="chart" src="graphics/status-entry-exit-07.png">
+                            </div>
+                            <div class="col-sm-3">
+                                <p class="caption">Source: weighted HMIS administrative data.</p>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- outer-va text blur slide -->
         <div class="slide" >
             <div class="image tx-road-caption "></div>
@@ -745,7 +766,7 @@ The agencies also worked together to develop a plan for each enrolled veteran, w
         </div>
 
         <!-- ch4-title -->
-        <div class="slide =" >
+        <div class="slide ch-4-title" >
             <div>
                     <!-- full screen video code via demosthenes.info -->
                         <video class="full-screen darker" autoplay="" loop="" poster="../img/ch-4-title.jpg">
@@ -794,19 +815,20 @@ Helping veterans in need makes Taylor feel good because she understands how easi
 </p>
         </div>
 
-
-
-<!-- SLIDE TEMPLATES -->
-
-
-        <!-- text blur slide -->
+<!-- going-forward img -->
         <div class="slide" >
-            <div class="image s2 blur"></div>
+            <div class="image going-forward "></div>
+            <p class="block-text bottom right ap">AP Photo/Eric Gay
+</p>
+        </div>
+        <!-- going-forward text blur slide -->
+        <div class="slide" >
+            <div class="image going-forward blur"></div>
             <div class="intro-body">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
-                            <p class="intro-text">Lorem ipsum dolor sit amet, cras pede sit lacinia suspendisse lacinia laoreet. Consequat neque dictum libero ultrices dui nibh. Elit maecenas sed faucibus ac orci eget, gravida quis, sed elementum amet varius fringilla, aptent in. Suscipit sed nunc eu vestibulum magna ligula. Elementum velit ac, tristique praesent. Eros tempus lectus proin vitae amet, nunc minima, erat id tempus nunc, dolor ultricies scelerisque augue quam tristique quis, ipsum enim vitae sed pulvinar porta ridiculus.
+                            <p class="intro-text">Going forward the number of post 9/11 and women veterans will inevitably grow after so many enlisted to serve in wars in Afghanistan and Iraq. Data also shows homelessness for these veterans is on the rise. So the challenge remains.
                             </p>
                         </div>
                     </div>
@@ -814,247 +836,112 @@ Helping veterans in need makes Taylor feel good because she understands how easi
             </div>
         </div>
 
-
-        <!-- video chapter slide -->
+        <!-- jannet-daughter-text-1 text blur slide -->
         <div class="slide" >
-            <div>
-                    <!-- full screen video code via demosthenes.info -->
-                        <video class="full-screen" autoplay="" loop="" poster="http://2015.soulofathens.com/img/soul.jpg">
-                            <source src="video/Chapter1_v2.mp4" type="video/mp4">
-                            <source src="http://2015.soulofathens.com/img/soul.webm" type="video/webm">
-                            Your browser does not support the video tag.
-                        </video> 
-            </div>
-            <div class="intro-body text-center">
+            <div class="image jannet-daughter-text "></div>
+                    </div>
+
+
+        <!-- jannet-daughter-text-1 text blur slide -->
+        <div class="slide" >
+            <div class="image jannet-daughter-text blur"></div>
+            <div class="intro-body">
                 <div class="container">
-                    <div class="row " >
+                    <div class="row">
                         <div class="col-md-8 col-md-offset-2">
-                               <h1>Chapter 1: Veteran Homelessness</h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- vimeo video blur slide -->
-        <div class="slide" >
-            <div class="image s2 blur"></div>
-            <div class="intro-body">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 video-wrapper">
-                            <iframe src="https://player.vimeo.com/video/107249397" width="100%" height="600" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- 4-up vimeo video blur slide -->
-        <div class="slide" >
-            <div class="image s2 blur"></div>
-            <div class="intro-body">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 video-wrapper video-four">
-                            <iframe src="https://player.vimeo.com/video/107249397" width="100%" height="600" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
-                        </div>
-                        <div class="col-md-6 video-wrapper video-four">
-                            <iframe src="https://player.vimeo.com/video/107249397" width="100%" height="600" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 video-wrapper video-four">
-                            <iframe src="https://player.vimeo.com/video/107249397" width="100%" height="600" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
-                        </div>
-                        <div class="col-md-6 video-wrapper video-four">
-                            <iframe src="https://player.vimeo.com/video/107249397" width="100%" height="600" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- interactive map slide -->
-        <div class="slide" >
-            <div class="image s2" style="min-height=1000px; height=100%">
-                <div id='map'></div>
-            </div>
-            <div class="intro-body">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="col-md-8 col-md-offset-2">
-<p class="intro-text">Lorem ipsum dolor sit amet, cras pede sit lacinia suspendisse lacinia laoreet. Consequat neque dictum libero ultrices dui nibh. Elit maecenas sed faucibus ac orci eget, gravida quis, sed elementum amet varius fringilla, aptent in. Suscipit sed nunc eu vestibulum magna ligula. Elementum velit ac, tristique praesent. Eros tempus lectus proin vitae amet, nunc minima, erat id tempus nunc, dolor ultricies scelerisque augue quam tristique quis, ipsum enim vitae sed pulvinar porta ridiculus.
+                            <p class="intro-text">Put another way, even if every single currently homeless veteran found a home tomorrow, new episodes would occur. That is why preventing homelessness is the critical means towards this end.
                             </p>
                         </div>
-                            
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-         <!-- interactive map slide v2 -->
+        <!-- jannet-daughter-text-1 text blur slide -->
         <div class="slide" >
-            <div class="image s2" style="min-height=1000px; height=100%">
-                <iframe width="100%" height="100%" frame-border="none" src="https://api.mapbox.com/v4/urbaninstitute.nok9p4i6/zoompan.html?access_token=pk.eyJ1IjoidXJiYW5pbnN0aXR1dGUiLCJhIjoiTEJUbmNDcyJ9.mbuZTy4hI_PWXw3C3UFbDQ" style="top:  50px; position: fixed;"></iframe>
-            </div>
+            <div class="image jannet-daughter-text blur"></div>
             <div class="intro-body">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-12">
-                            <div class="col-md-8 col-md-offset-2">
-<p class="intro-text">Lorem ipsum dolor sit amet, cras pede sit lacinia suspendisse lacinia laoreet. Consequat neque dictum libero ultrices dui nibh. Elit maecenas sed faucibus ac orci eget, gravida quis, sed elementum amet varius fringilla, aptent in. Suscipit sed nunc eu vestibulum magna ligula. Elementum velit ac, tristique praesent. Eros tempus lectus proin vitae amet, nunc minima, erat id tempus nunc, dolor ultricies scelerisque augue quam tristique quis, ipsum enim vitae sed pulvinar porta ridiculus.
-                            </p>
-                        </div>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- text or graphic black block slide -->
-        <div class="slide" >
-            <div class="image s2 blur"></div>
-            <div class="intro-body">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2 center-block-text">
-                            <h3>Graphic title</h3>
-                            <p class="">Lorem ipsum dolor sit amet, cras pede sit lacinia suspendisse lacinia laoreet. Consequat neque dictum libero ultrices dui nibh. Elit maecenas sed faucibus ac orci eget, gravida quis, sed elementum amet varius fringilla, aptent in. Suscipit sed nunc eu vestibulum magna ligula. Elementum velit ac, tristique praesent. Eros tempus lectus proin vitae amet, nunc minima, erat id tempus nunc, dolor ultricies scelerisque augue quam tristique quis, ipsum enim vitae sed pulvinar porta ridiculus.
-                            </p>
-
-                            <img class="chart" src="img/column2.png"/>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- text or graphic black block slide -->
-        <div class="slide" >
-            <div class="image s2 blur"></div>
-            <div class="intro-body">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 center-block-text">
-                            <div class="col-sm-3">
-                                <h3>Graphic title</h3>
-                                <p class="">This is a bit of intro text. </p>
-                                <img class="chart" src="graphics/status-entry-exit-01.png">
-                            </div>
-                            <div class="col-sm-3 chart-column">
-                                <img class="chart" src="graphics/status-entry-exit-02.png">
-                            </div>
-                            <div class="col-sm-3 chart-column">
-                                <img  class="chart" src="graphics/status-entry-exit-03.png">
-                            </div>
-                            <div class="col-sm-3 chart-column">
-                                <img class="chart" src="graphics/status-entry-exit-04.png">
-                            </div>
-                            <div class="col-sm-3 chart-column">
-                                <img  class="chart" src="graphics/status-entry-exit-05.png">
-                            </div>
-                            <div class="col-sm-3 chart-column">
-                                <img class="chart" src="graphics/status-entry-exit-06.png">
-                            </div>
-                            <div class="col-sm-3 chart-column">
-                                <img  class="chart" src="graphics/status-entry-exit-07.png">
-                            </div>
-                            <div class="col-sm-3">
-                                <p class="caption">Source: weighted HMIS administrative data.</p>
-                            </div>
-
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- sound slide -->
-        <div class="slide " >
-            <div class="image s3"></div>
-            <div class="intro-body audio-slide">
-                <div class="container audio-slide">
-                    <div class="row audio-slide" >
-                        <div class="col-md-8 col-md-offset-2 audio-slide">
-                                <iframe class="audio" width="100%" height="166" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/163002585%3Fsecret_token%3Ds-gviiK&amp;color=0096d2&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_artwork=false&amp;show_user=false&amp;show_reposts=false"></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- video slide -->
-        <div class="slide" >
-            <div>
-                    <!-- full screen video code via demosthenes.info -->
-                        <video class="full-screen" autoplay="" loop="" poster="http://2015.soulofathens.com/img/soul.jpg">
-                            <source src="http://2015.soulofathens.com/img/soul.mp4" type="video/mp4">
-                            <source src="http://2015.soulofathens.com/img/soul.webm" type="video/webm">
-                            Your browser does not support the video tag.
-                        </video> 
-                    </div>
-            <div class="intro-body ">
-                <div class="container">
-                    <div class="row " >
                         <div class="col-md-8 col-md-offset-2">
-                               
+                            <p class="intro-text">The good news is federal and local efforts to end veterans homelessness are working.
+</p><p class="intro-text">
+Furthermore, the Urban Institute’s evaluation of VHPD tells us that identifying veterans for prevention services, attacking the problem before veterans lose their homes, and providing other wraparound services, such as career counseling and daycare are high potential policy options worth further exploration.
+</p><p class="intro-text">
+And if the lessons from VHPD carry forward into future efforts, then there’s a fighting chance that we can end veterans homelessness and better honor those who have served. 
+
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-            
         </div>
 
-        <!-- text block slide -->
-        <div class="slide " >
-            <div class="image s2"></div>
-            
-            <p class="block-text bottom right">Lorem ipsum dolor sit amet, cras pede sit lacinia suspendisse lacinia laoreet. Consequat neque dictum libero ultrices dui nibh. Elit maecenas sed faucibus ac orci eget, gravida quis, sed elementum amet varius fringilla, aptent in. Suscipit sed nunc eu vestibulum magna ligula. Elementum velit ac, tristique praesent. Eros tempus lectus proin vitae amet, nunc minima, erat id tempus nunc, dolor ultricies scelerisque augue quam tristique quis, ipsum enim vitae sed pulvinar porta ridiculus.</p>
+
+                <!-- closing jannet-daughter-text-1 text blur slide -->
+        <div class="slide" >
+            <div class="image jannet-daughter-text blur"></div>
+            <div class="intro-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <p class="intro-text">To learn more about VHPD and veterans homelessness, <a href="http://www.urban.org/" target="_blank">read the research</a>. 
+
+                            </p>
+                <p class="text-center">  <a  style="margin: 0 auto;" href="http://www.urban.org" title="Home" rel="home" class="logo blue-black md"></a></p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
         </div>
 
-        <!-- AP block slide -->
-        <div class="slide " >
-            <div class="image s2"></div>
-            
-            <p class="block-text ap bottom right">Lorem ipsum dolor sit amet, cras pede sit lacinia suspendisse lacinia laoreet. Consequat neque dictum libero ultrices dui nibh. <span class="credit">AP photo/John Doe</span></p>
-        </div>
+
+
+
+
+
+
 
     </div>
     <!-- about slide -->
     <div class="about-slide"  >
-        <div class="image s1 blur"></div>
+        <div class="image credits blur"></div>
         <div class="intro-body" style="padding-top:150px;">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
                         <h1 class="brand-heading">About this project</h1>
-                        <p class="intro-text">Lorem ipsum dolor sit amet, cras pede sit lacinia suspendisse lacinia laoreet. Consequat neque dictum libero ultrices dui nibh. Elit maecenas sed faucibus ac orci eget, gravida quis, sed elementum amet varius fringilla, aptent in. Suscipit sed nunc eu vestibulum magna ligula. Elementum velit ac, tristique praesent. Eros tempus lectus proin vitae amet, nunc minima, erat id tempus nunc, dolor ultricies scelerisque augue quam tristique quis, ipsum enim vitae sed pulvinar porta ridiculus.
+                        <p class="intro-text">The Assisted Housing Initiative is a project of the Urban Institute, made possible by support from Housing Authority Insurance, Inc. (HAI, Inc.), to provide fact-based analysis about public and assisted housing. The Urban Institute is a non-profit, nonpartisan research organization and retains independent and exclusive control over substance and quality of any Assisted Housing Initiative products. The views expressed in this and other Assisted Housing Initiative commentaries are those of the authors and should not be attributed to the Urban Institute or HAI, Inc.
+
+
                         </p>
                         <h2>Project Credits</h2>
                         <h4>Research</h4>
-                        <p class="credit"><a href="http://www.urban.org/author/sandy-baum" target="_blank">Sandy Baum</a>, <a href="http://www.urban.org/author/martha-c-johnson" target="_blank">Martha Johnson</a>, and <a href="http://www.urban.org/author/kim-s-rueben" target="_blank">Kim Rueben</a></p>
+                        <p class=""><a href="http://www.urban.org/author/mary-k-cunningham" target="_blank">Mary K. Cunningham</a>, <a href="http://www.urban.org/author/jennifer-biess" target="_blank">Jennifer Biess</a>, <a href="http://www.urban.org/author/dina-emam" target="_blank">Dina Emam</a>, and <a href="http://www.urban.org/author/martha-r-burt" target="_blank">Martha R. Burt</a>.</p>
+
+
+                        <h4>Photography and Video</h4>
+                        <p>
+                        <a href="http://www.urban.org/author/matthew-johnson" target="_blank">Matthew Johnson</a>, and <a href="http://www.urban.org/author/lydia-thompson" target="_blank">Lydia Thompson</a></p>
+
 
                         <h4>Development and Design</h4>
-                        <p class="credit"><a href="http://www.urban.org/author/hannah-recht" target="_blank">Hannah Recht</a> and <a href="http://www.urban.org/author/tim-meko" target="_blank">Tim Meko</a></p>
+                        <p>
+                        <a href="http://www.urban.org/author/tim-meko" target="_blank">Tim Meko</a></p>
 
                         <h4>Editorial</h4>
-                        <p class="credit"><a href="http://www.urban.org/author/serena-lei" target="_blank">Serena Lei</a> and <a href="http://www.urban.org/author/elizabeth-forney" target="_blank">Elizabeth Forney</a></p>
+                        <p class=""><a href="http://www.urban.org/author/elizabeth-forney" target="_blank">Elizabeth Forney</a></p>
 
 
-                         <p class="text-center">
+                         <p class="text-center" >
                             <a id="return-feature" href="#"><button class="btn-lg">RETURN TO FEATURE</button></a>
                         </p>
 
 
-                        <p class="copy">Copyright © <a href="http://www.urban.org" target="_blank">Urban Institute</a> October 2015. <a href="index.html#about" target="_blank">About this project.</a> <a href="https://github.com/UrbanInstitute/higher-ed" target="_blank">View this on GitHub.</a>
+                        <p class="copy">Copyright © <a href="http://www.urban.org" target="_blank">Urban Institute</a> November 2015. <a href="index.html#about" target="_blank">About this project.</a> <a href="https://github.com/UrbanInstitute/higher-ed" target="_blank">View this on GitHub.</a>
                         </p>
                     </div>
                 </div>
