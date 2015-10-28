@@ -1,3 +1,4 @@
+
 var slide = 0;
 var numSlides;
 var initialload = true;
@@ -39,9 +40,12 @@ function gotoslide(index){
 
 if (currentSlide == index){return;}
 
+if($.contains( $('iframe'), currentSlide )){
+
+    console.log("this frame contains an iframe and it needs to be turned off");
+}
+
 	$( "div.slide.active" ).addClass("transition");
-
-
 
 	$('#slide_'+index).addClass("active");
 	$( "div.slide.active.transition" ).removeClass("active");
@@ -52,6 +56,17 @@ if (currentSlide == index){return;}
 	}else{
 		$("#next-btn").removeClass("btn-hidden");
 	}
+
+    //pause any/all iframe content
+    pauseIFrames("jannet-intro-frame");
+    pauseIFrames("va-audio-frame");
+    pauseIFrames("shinseki-audio-frame");
+    pauseIFrames("jannet-va-frame");
+    pauseIFrames("weinberg-frame");
+    pauseIFrames("wood-frame");
+    pauseIFrames("butts-frame");
+    pauseIFrames("ridings-frame");
+
 
     // update URL
     var newURL = updateURLParameter(window.location.href, 'slide', index);
@@ -102,7 +117,6 @@ if (currentSlide == index){return;}
 $("#next-btn").click(function(){
 	//get current slide ID
 	var currentID = parseInt($( "div.slide.active" ).attr('id').split("_")[1]);
-	console.log(currentID);
 	//go to slide with current ++
 	gotoslide(currentID+1);	
 });
@@ -110,7 +124,6 @@ $("#next-btn").click(function(){
 $("#back-btn").click(function(){
 	//get current slide ID
 	var currentID = parseInt($( "div.slide.active" ).attr('id').split("_")[1]);
-	console.log(currentID);
 	//go to slide with current --
 	gotoslide(currentID-1);
 });
@@ -176,6 +189,17 @@ return query_string;
 }();
 
 
+
+function pauseIFrames(frameID){
+
+    var $frame = $('iframe#' + frameID);
+// saves the current iframe source
+var vidsrc = $frame.attr('src');
+// sets the source to nothing, stopping the video
+$frame.attr('src',''); 
+// sets it back to the correct link so that it reloads immediately on the next window open
+$frame.attr('src', vidsrc);
+}
 
 function updateURLParameter(url, param, paramVal)
 {
