@@ -4,8 +4,7 @@ var numSlides;
 var initialload = true;
 
 
-var chapterBreaks = [2,15,25,40];
-var frameIDs = [5,15,17,25,37];
+var chapterBreaks = [2,14,24,40];
 
 
 $( document ).ready(function() {
