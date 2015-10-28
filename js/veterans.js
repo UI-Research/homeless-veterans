@@ -4,7 +4,9 @@ var numSlides;
 var initialload = true;
 
 
-var chapterBreaks = [2,15,25,40]
+var chapterBreaks = [2,15,25,40];
+var frameIDs = [5,15,17,25,37];
+
 
 $( document ).ready(function() {
 
@@ -38,14 +40,21 @@ function gotoslide(index){
 
         var currentSlide = parseInt($( "div.slide.active" ).attr('id').split("_")[1]);
 
-if (currentSlide == index){return;}
+    if (currentSlide == index){return;}
 
-if($.contains( $('iframe'), currentSlide )){
+// if($.contains( $('iframe'), currentSlide )){
 
-    console.log("this frame contains an iframe and it needs to be turned off");
-}
+//     console.log("this frame contains an iframe and it needs to be turned off");
+// }
 
 	$( "div.slide.active" ).addClass("transition");
+
+//when leaving a slide, turn off iframe
+    $( "div.slide.active.transition" ).find("iframe").each(function(){
+        $(this).attr("data-src",$(this).attr("src"));
+        $(this).attr("src",'');
+    });
+
 
 	$('#slide_'+index).addClass("active");
 	$( "div.slide.active.transition" ).removeClass("active");
@@ -57,15 +66,26 @@ if($.contains( $('iframe'), currentSlide )){
 		$("#next-btn").removeClass("btn-hidden");
 	}
 
+//turn on all iframes on the slide
+var thisFrameSrc = $('#slide_'+index).find("iframe").attr("data-src");
+
+if (thisFrameSrc){
+    $('#slide_'+index).find("iframe").each(function(){
+        $(this).attr("src",$(this).attr("data-src"));
+    });
+}
+
     //pause any/all iframe content
-    pauseIFrames("jannet-intro-frame");
-    pauseIFrames("va-audio-frame");
-    pauseIFrames("shinseki-audio-frame");
-    pauseIFrames("jannet-va-frame");
-    pauseIFrames("weinberg-frame");
-    pauseIFrames("wood-frame");
-    pauseIFrames("butts-frame");
-    pauseIFrames("ridings-frame");
+    // pauseIFrames("jannet-intro-frame");
+    // pauseIFrames("va-audio-frame");
+    // pauseIFrames("shinseki-audio-frame");
+    // pauseIFrames("jannet-va-frame");
+    // pauseIFrames("weinberg-frame");
+    // pauseIFrames("wood-frame");
+    // pauseIFrames("butts-frame");
+    // pauseIFrames("ridings-frame");
+
+
 
 
     // update URL
@@ -192,7 +212,7 @@ return query_string;
 
 function pauseIFrames(frameID){
 
-    var $frame = $('iframe#' + frameID);
+var $frame = $('iframe#' + frameID);
 // saves the current iframe source
 var vidsrc = $frame.attr('src');
 // sets the source to nothing, stopping the video
