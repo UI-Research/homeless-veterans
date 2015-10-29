@@ -73,9 +73,18 @@ if (thisFrameSrc){
     var newURL = updateURLParameter(window.location.href, 'slide', index);
     newURL = updateURLParameter(newURL, 'slide', index);
 
-    var stateObj = { foo: "Veterans" };
+
+if (isIE () && isIE () < 10) {
+ // is IE version less than 10
+} else {
+ // is IE 10 and later or not IE
+ var stateObj = { foo: "Veterans" };
     history.pushState(stateObj, "Homeless on the Home Front", newURL);
 
+}
+
+
+    
     //chapter navigation
     if (index == 0){ //home
         $(".chapter0").addClass("chapter-active");
@@ -147,14 +156,19 @@ function goNext(){
     //get current slide ID
     var currentID = parseInt($( "div.slide.active" ).attr('id').split("_")[1]);
     //go to slide with current ++
-    gotoslide(currentID+1); 
+
+    if (currentID < numSlides){
+        gotoslide(currentID+1); 
+    }
 };
 
 function goBack(){
         //get current slide ID
     var currentID = parseInt($( "div.slide.active" ).attr('id').split("_")[1]);
     //go to slide with current --
-    gotoslide(currentID-1);
+        if (currentID > 0){
+            gotoslide(currentID-1);
+        }
 }
 
 
@@ -260,4 +274,9 @@ function updateURLParameter(url, param, paramVal)
 
     var rows_txt = temp + "" + param + "=" + paramVal;
     return baseURL + "?" + newAdditionalURL + rows_txt;
+}
+
+function isIE () {
+  var myNav = navigator.userAgent.toLowerCase();
+  return (myNav.indexOf('msie') != -1) ? parseInt(myNav.split('msie')[1]) : false;
 }
