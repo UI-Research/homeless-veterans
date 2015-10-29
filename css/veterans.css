@@ -4,7 +4,7 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-body {
+ body {
     width: 100%;
     height: 100%;
     font-family: Lato,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -40,12 +40,12 @@ p {
 }
 
 ul{
- text-align: left;
-    font-size: 1.25em;
+   text-align: left;
+   font-size: 1.25em;
 }
 
 #start-btn{
-        background: none;
+    background: none;
     border: 2px solid #fff;
     padding: 10px 30px 10px 30px;
     font-size: 20px;
@@ -59,7 +59,7 @@ ul{
 }
 
 .read-research{
-        position: fixed;
+    position: fixed;
     bottom: 100px;
     left: 20%;
     right:20%;
@@ -69,15 +69,15 @@ ul{
     vertical-align: bottom;
 }
 .chart{
- width:100%;
- /*max-width:700px;*/
- margin:0 auto;
- margin-bottom: 15px;
-/*padding:15px;*/
+   width:100%;
+   /*max-width:700px;*/
+   margin:0 auto;
+   margin-bottom: 15px;
+   /*padding:15px;*/
 }
 
 .chart-column{
-/*padding:0;*/
+    /*padding:0;*/
 }
 .text-swatch{
     color:#fff;
@@ -85,15 +85,15 @@ ul{
     padding-right: 4px;
 }
 .text-list li{
- text-align: left !important;
-    font-size: 18px;
+   text-align: left !important;
+   font-size: 18px;
 }
 .type-table p{
- font-size: 14px;
-    margin-bottom:5px;
-    margin-top:5px;
-    margin-left:5px;
-    margin-right:5px;
+   font-size: 14px;
+   margin-bottom:5px;
+   margin-top:5px;
+   margin-left:5px;
+   margin-right:5px;
 }
 @media(min-width:767px) {
     p {
@@ -104,19 +104,19 @@ ul{
 }
 
 .divider{
-   width: 150px;
-  display: inline-block;
-  border: 3px solid #1696d2;
-  margin-top: 55px;
-    margin-bottom:55px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;   
+ width: 150px;
+ display: inline-block;
+ border: 3px solid #1696d2;
+ margin-top: 55px;
+ margin-bottom:55px;
+ display: block;
+ margin-left: auto;
+ margin-right: auto;   
 }
 
 
 a {
-    color: #1696d2;
+    color: #cfe8f3;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -148,9 +148,9 @@ a:focus {
 .image{
     display: block;
     position: absolute;
-            width: 100%;
+    width: 100%;
     height: 100%;
-        -webkit-background-size: cover;
+    -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
@@ -225,11 +225,11 @@ a:focus {
 }
 
 .slide .byline-text{
- text-align: center;
+   text-align: center;
 }
 
 @media(max-width: 768px) {
-        .slide {
+    .slide {
         height: 100%;
         /*padding: 120px;*/
     }
@@ -241,20 +241,25 @@ a:focus {
     .subtitle{
         font-size: 20pt;
     }
-p{font-size: 14px;}
+    p{font-size: 14px;}
     .slide .intro-body .intro-text {
         font-size: 14px;
+        margin-bottom: 5px;
     }
 
     .full-screen{
-height: 50% !important;
-min-height: auto;
-bottom: auto;
-top:25%;
+        height: 50% !important;
+        min-height: auto;
+        bottom: auto;
+        top:25%;
     }
 
     .chapter-nav{
         display: none;
+    }
+
+    .read-research{
+        bottom: 40px;
     }
 
     .audio{
@@ -272,7 +277,7 @@ top:25%;
 
 .btn-primary{
     font-family: 'Lato';
-     background-color:#000;
+    background-color:#000;
     border-radius: 0;
     border: none;
     font-weight: 300;
@@ -302,9 +307,9 @@ top:25%;
     }
 
     .subtitle{
-    font-size: 2em;
-    font-weight: 300;
-}
+        font-size: 2em;
+        font-weight: 300;
+    }
 }
 
 .btn-lg{
@@ -429,11 +434,11 @@ top:25%;
 
 .credit{
 /*    font-family: Georgia, serif;
-    font-style: italic;*/
+font-style: italic;*/
 }
 
 .graphic-credit{
-font-size:14px;
+    font-size:14px;
 }
 
 
@@ -483,197 +488,197 @@ font-size:14px;
     line-height: 0px;
     padding-top: 3px;
 
-.btn-circle:hover,
-.btn-circle:focus {
-    outline: 0;
-    color: #000;
-    background: rgba(255,255,255,.1);
-}
-
-.btn-circle i.animated {
-    -webkit-transition-property: -webkit-transform;
-    -webkit-transition-duration: 1s;
-    -moz-transition-property: -moz-transform;
-    -moz-transition-duration: 1s;
-}
-
-.btn-circle:hover i.animated {
-    -webkit-animation-name: pulse;
-    -moz-animation-name: pulse;
-    -webkit-animation-duration: 1.5s;
-    -moz-animation-duration: 1.5s;
-    -webkit-animation-iteration-count: infinite;
-    -moz-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -moz-animation-timing-function: linear;
-}
-
-@-webkit-keyframes pulse {    
-    0 {
-        -webkit-transform: scale(1);
-        transform: scale(1);
+    .btn-circle:hover,
+    .btn-circle:focus {
+        outline: 0;
+        color: #000;
+        background: rgba(255,255,255,.1);
     }
 
-    50% {
-        -webkit-transform: scale(1.2);
-        transform: scale(1.2);
+    .btn-circle i.animated {
+        -webkit-transition-property: -webkit-transform;
+        -webkit-transition-duration: 1s;
+        -moz-transition-property: -moz-transform;
+        -moz-transition-duration: 1s;
     }
 
-    100% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-}
-
-@-moz-keyframes pulse {    
-    0 {
-        -moz-transform: scale(1);
-        transform: scale(1);
-    }
-
-    50% {
-        -moz-transform: scale(1.2);
-        transform: scale(1.2);
+    .btn-circle:hover i.animated {
+        -webkit-animation-name: pulse;
+        -moz-animation-name: pulse;
+        -webkit-animation-duration: 1.5s;
+        -moz-animation-duration: 1.5s;
+        -webkit-animation-iteration-count: infinite;
+        -moz-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
+        -moz-animation-timing-function: linear;
     }
 
-    100% {
-        -moz-transform: scale(1);
-        transform: scale(1);
+    @-webkit-keyframes pulse {    
+        0 {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+        }
+
+        50% {
+            -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+        }
+
+        100% {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+        }
     }
-}
 
-.content-section {
-    padding-top: 100px;
-}
+    @-moz-keyframes pulse {    
+        0 {
+            -moz-transform: scale(1);
+            transform: scale(1);
+        }
 
-.download-section {
-    width: 100%;
-    padding: 50px 0;
-    color: #fff;
-    background-color: #000;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
+        50% {
+            -moz-transform: scale(1.2);
+            transform: scale(1.2);
+        }
 
-.refresh {
-    z-index: 3;
-    display: block;
-    background-repeat: no-repeat;
-    background-image: url(http://www.urban.org/sites/all/themes/urban/images/generated/icons-s8fe141aaaa.png);
-    background-position: 0 -1519px;
-    height: 35px;
-    width: 45px;
-    margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 5px;
-}
-.refresh:hover{
-        background-position: 0 -1751px;
-}
-.at_a11y {
-    display: none;
-}
+        100% {
+            -moz-transform: scale(1);
+            transform: scale(1);
+        }
+    }
 
-.refresh-data{
-    display: block;
-    font-family: Georgia, serif;
-    font-style: italic;
-    margin-bottom: 20px;
-}
-
-
-.story-box{
-background-color:#000;
-font-family: Lato, sans-serif;
-font-size: 1.2em;
-color: #fff;
-height: 400px;
-border: 2px solid #fff;
-}
-.story-box > p{
-display: table-cell;
-text-align: center;
-vertical-align: middle;
-height: inherit;
-}
-
-@media(min-width:767px) {
     .content-section {
-        padding-top: 250px;
+        padding-top: 100px;
     }
 
     .download-section {
-        padding: 100px 0;
+        width: 100%;
+        padding: 50px 0;
+        color: #fff;
+        background-color: #000;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
     }
-}
 
-.btn {
-    text-transform: uppercase;
-    font-family: Lato,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 400;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-    text-align: center !important;
-}
-
-.btn-default {
-    border: 1px solid #1696d2;
-    color: #1696d2;
-    background-color: transparent;
-}
-
-.btn-default:hover,
-.btn-default:focus {
-    border: 1px solid #1696d2;
-    outline: 0;
-    color: #000;
-    background-color: #1696d2;
-}
-
-ul.banner-social-buttons {
-    margin-top: 0;
-}
-
-@media(max-width:1199px) {
-    ul.banner-social-buttons {
-        margin-top: 15px;
-    }
-}
-
-@media(max-width:767px) {
-    ul.banner-social-buttons li {
+    .refresh {
+        z-index: 3;
         display: block;
+        background-repeat: no-repeat;
+        background-image: url(http://www.urban.org/sites/all/themes/urban/images/generated/icons-s8fe141aaaa.png);
+        background-position: 0 -1519px;
+        height: 35px;
+        width: 45px;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
+    .refresh:hover{
+        background-position: 0 -1751px;
+    }
+    .at_a11y {
+        display: none;
+    }
+
+    .refresh-data{
+        display: block;
+        font-family: Georgia, serif;
+        font-style: italic;
         margin-bottom: 20px;
-        padding: 0;
     }
 
-    ul.banner-social-buttons li:last-child {
-        margin-bottom: 0;
-    }
-    
-    .logo{
- display: inline;
- background-image: url(../img/urban.png);
-background-repeat: no-repeat;
-float: left;
-height: 80px;
-margin-left: 0;
-width: 130px;
-}
-.logo-collapse{
- background-image: url(../img/urban-sm.png);
-background-repeat: no-repeat;
-float: left;
-margin-left: 0;
-    margin-top:-4px;
-width: 130px;
-}
-}
 
-footer {
+    .story-box{
+        background-color:#000;
+        font-family: Lato, sans-serif;
+        font-size: 1.2em;
+        color: #fff;
+        height: 400px;
+        border: 2px solid #fff;
+    }
+    .story-box > p{
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+        height: inherit;
+    }
+
+    @media(min-width:767px) {
+        .content-section {
+            padding-top: 250px;
+        }
+
+        .download-section {
+            padding: 100px 0;
+        }
+    }
+
+    .btn {
+        text-transform: uppercase;
+        font-family: Lato,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-weight: 400;
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+        text-align: center !important;
+    }
+
+    .btn-default {
+        border: 1px solid #1696d2;
+        color: #1696d2;
+        background-color: transparent;
+    }
+
+    .btn-default:hover,
+    .btn-default:focus {
+        border: 1px solid #1696d2;
+        outline: 0;
+        color: #000;
+        background-color: #1696d2;
+    }
+
+    ul.banner-social-buttons {
+        margin-top: 0;
+    }
+
+    @media(max-width:1199px) {
+        ul.banner-social-buttons {
+            margin-top: 15px;
+        }
+    }
+
+    @media(max-width:767px) {
+        ul.banner-social-buttons li {
+            display: block;
+            margin-bottom: 20px;
+            padding: 0;
+        }
+
+        ul.banner-social-buttons li:last-child {
+            margin-bottom: 0;
+        }
+
+        .logo{
+           display: inline;
+           background-image: url(../img/urban.png);
+           background-repeat: no-repeat;
+           float: left;
+           height: 80px;
+           margin-left: 0;
+           width: 130px;
+       }
+       .logo-collapse{
+           background-image: url(../img/urban-sm.png);
+           background-repeat: no-repeat;
+           float: left;
+           margin-left: 0;
+           margin-top:-4px;
+           width: 130px;
+       }
+   }
+
+   footer {
     padding: 50px 0;
 }
 
@@ -706,7 +711,7 @@ body {
 }
 
 @media(min-width:1024px) {
-        .slide {
+    .slide {
         height: 100%;
         /*padding: 120px;*/
     }

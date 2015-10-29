@@ -37,33 +37,28 @@ function gotoslide(index){
 		$(".next-back").removeClass("btn-hidden");
 	}
 
-        var currentSlide = parseInt($( "div.slide.active" ).attr('id').split("_")[1]);
+    var currentSlide = parseInt($( "div.slide.active" ).attr('id').split("_")[1]);
 
     if (currentSlide == index){return;}
 
-// if($.contains( $('iframe'), currentSlide )){
-
-//     console.log("this frame contains an iframe and it needs to be turned off");
-// }
-
-	$( "div.slide.active" ).addClass("transition");
+    $( "div.slide.active" ).addClass("transition");
 
 //when leaving a slide, turn off iframe
-    $( "div.slide.active.transition" ).find("iframe").each(function(){
-        $(this).attr("data-src",$(this).attr("src"));
-        $(this).attr("src",'');
-    });
+$( "div.slide.active.transition" ).find("iframe").each(function(){
+    $(this).attr("data-src",$(this).attr("src"));
+    $(this).attr("src",'');
+});
 
 
-	$('#slide_'+index).addClass("active");
-	$( "div.slide.active.transition" ).removeClass("active");
-	$( "div.slide.transition" ).removeClass("transition");
+$('#slide_'+index).addClass("active");
+$( "div.slide.active.transition" ).removeClass("active");
+$( "div.slide.transition" ).removeClass("transition");
 
-	if (index == numSlides){
-		$("#next-btn").addClass("btn-hidden");
-	}else{
-		$("#next-btn").removeClass("btn-hidden");
-	}
+if (index == numSlides){
+  $("#next-btn").addClass("btn-hidden");
+}else{
+  $("#next-btn").removeClass("btn-hidden");
+}
 
 //turn on all iframes on the slide
 var thisFrameSrc = $('#slide_'+index).find("iframe").attr("data-src");
@@ -73,19 +68,6 @@ if (thisFrameSrc){
         $(this).attr("src",$(this).attr("data-src"));
     });
 }
-
-    //pause any/all iframe content
-    // pauseIFrames("jannet-intro-frame");
-    // pauseIFrames("va-audio-frame");
-    // pauseIFrames("shinseki-audio-frame");
-    // pauseIFrames("jannet-va-frame");
-    // pauseIFrames("weinberg-frame");
-    // pauseIFrames("wood-frame");
-    // pauseIFrames("butts-frame");
-    // pauseIFrames("ridings-frame");
-
-
-
 
     // update URL
     var newURL = updateURLParameter(window.location.href, 'slide', index);
@@ -134,19 +116,46 @@ if (thisFrameSrc){
 
 
 $("#next-btn").click(function(){
-	//get current slide ID
-	var currentID = parseInt($( "div.slide.active" ).attr('id').split("_")[1]);
-	//go to slide with current ++
-	gotoslide(currentID+1);	
+goNext();
 });
 
 $("#back-btn").click(function(){
-	//get current slide ID
-	var currentID = parseInt($( "div.slide.active" ).attr('id').split("_")[1]);
-	//go to slide with current --
-	gotoslide(currentID-1);
+goBack();
 });
 
+$(document).keydown(function(e) {
+    switch(e.which) {
+        case 37: goBack();// left
+        break;
+
+        case 38: goBack();// up
+        break;
+
+        case 39: goNext();// right
+        break;
+
+        case 40: goNext();// down
+        break;
+
+        default: return; // exit this handler for other keys
+    }
+    e.preventDefault(); // prevent the default action (scroll / move caret)
+});
+
+
+function goNext(){
+    //get current slide ID
+    var currentID = parseInt($( "div.slide.active" ).attr('id').split("_")[1]);
+    //go to slide with current ++
+    gotoslide(currentID+1); 
+};
+
+function goBack(){
+        //get current slide ID
+    var currentID = parseInt($( "div.slide.active" ).attr('id').split("_")[1]);
+    //go to slide with current --
+    gotoslide(currentID-1);
+}
 
 
 $(".about").click(function(){
@@ -207,18 +216,6 @@ var QueryString = function () {
 return query_string;
 }();
 
-
-
-function pauseIFrames(frameID){
-
-var $frame = $('iframe#' + frameID);
-// saves the current iframe source
-var vidsrc = $frame.attr('src');
-// sets the source to nothing, stopping the video
-$frame.attr('src',''); 
-// sets it back to the correct link so that it reloads immediately on the next window open
-$frame.attr('src', vidsrc);
-}
 
 function updateURLParameter(url, param, paramVal)
 {
