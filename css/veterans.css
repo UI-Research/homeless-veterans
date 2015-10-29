@@ -247,6 +247,10 @@ a:focus {
         margin-bottom: 5px;
     }
 
+    .block-text{
+        font-size: 14px;
+    }
+
     .full-screen{
         height: 50% !important;
         min-height: auto;
