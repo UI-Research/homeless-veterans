@@ -183,7 +183,7 @@ $("#return-feature").click(function(){
 });
 
 
-$("#start-btn").click(function (){
+$("#start").click(function (){
 	gotoslide(1);
 });
 
