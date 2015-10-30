@@ -122,17 +122,19 @@ ul{
 }
 
 
-a {
+.intro-text a {
     color: #cfe8f3;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 }
 
-a:hover,
-a:focus {
+.intro-text a:hover,
+.intro-text a:focus {
     text-decoration: none;
-    color: #1c75bc ;
+    color: #fff ;
+    background-color: #000;
+    border-bottom: 3px solid #1696d2;
 }
 
 .light {
