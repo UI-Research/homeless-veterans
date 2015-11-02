@@ -122,15 +122,30 @@ ul{
 }
 
 
-.intro-text a {
+.intro-text, .center-block-text a {
     color: #cfe8f3;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 }
 
-.intro-text a:hover,
-.intro-text a:focus {
+.intro-text, .center-block-text a:hover,
+.intro-text, .center-block-text a:focus {
+    text-decoration: none;
+    color: #fff ;
+    background-color: #000;
+    border-bottom: 3px solid #1696d2;
+}
+
+.about-slide a {
+    color: #cfe8f3;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.about-slide a:hover,
+.about-slide a:focus {
     text-decoration: none;
     color: #fff ;
     background-color: #000;
