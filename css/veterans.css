@@ -83,6 +83,17 @@ ul{
    /*padding:15px;*/
 }
 
+@media(max-height: 850px){
+    .chart{
+        height: 50%;
+        width: 50%;
+        margin: 0 auto;
+    }
+    .intro-text{
+        font-size: 14px;
+    }
+}
+
 .chart-column{
     /*padding:0;*/
 }
@@ -109,6 +120,9 @@ ul{
         line-height: 1.6;
     }
 }
+
+
+
 
 .divider{
  width: 150px;
@@ -752,5 +766,7 @@ body {
         font-size: 24px;
     }
 }
+
+
 
 
