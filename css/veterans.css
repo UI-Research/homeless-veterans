@@ -94,6 +94,80 @@ ul{
     }
 }
 
+/*heatmap table styles*/
+.range_0-9{
+        background: #fff;
+        color: #333;
+}
+.range_10-19{
+        background: #cfe8f3;
+                color: #333;
+
+}
+.range_20-29{
+        background: #a2d4ec;
+                color: #333;
+
+}
+.range_30-39{
+        background: #a2d4ec;
+                color: #333;
+
+}
+.range_40-49{
+        background: #73bfe2;
+}
+.range_50-59{
+        background: #73bfe2;
+}
+.range_60-69{
+        background: #46abdb;
+}
+.range_70-79{
+        background: #46abdb;
+}
+.range_80-89{
+        background: #1696d2;
+}
+.range_90-99{
+        background: #1696d2;
+}
+.range_100{
+        color: #fff;
+        background: #0a4c6a;
+}
+.num{
+    text-align: right;
+    width: 100px;
+
+}
+.tableizer-table td, th{
+padding:10px;
+}
+.tableizer-firstrow{
+    text-align: center;
+}
+.first-col{
+    max-width: 120px;
+    text-align: left;
+}
+
+/*responsive for height*/
+@media(max-height: 1000px){
+.tableizer-table td, th{
+    padding:2px;
+    font-size: 12px;
+}
+
+.tableizer-table h3{
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.first-col{
+    font-size: 14px;
+}
+}
+
 .chart-column{
     /*padding:0;*/
 }
@@ -315,6 +389,10 @@ ul{
     .full-screen{
         display: none;
     }
+
+    .block-text{
+        position: relative;
+    }
 }
 
 .btn-primary{
@@ -481,6 +559,7 @@ font-style: italic;*/
 
 .graphic-credit{
     font-size:14px;
+    margin-top: 10px;
 }
 
 
@@ -496,8 +575,6 @@ font-style: italic;*/
 .left{
     left: 0px;
 }
-
-
 
 
 .btn-circle {
