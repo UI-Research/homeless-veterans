@@ -46,6 +46,9 @@ ul{
 .chapter-kicker{
     text-transform: uppercase;
 }
+#photos-about{
+    display: none;
+}
 .start-btn{
     background: none;
     border: 2px solid #fff;
@@ -54,7 +57,7 @@ ul{
     color: #fff;
     font-weight: 300;
 
-    margin-top:10%;
+    margin-top:5%;
 }
 .start-btn:hover{
     background:#1696d2;
@@ -392,6 +395,12 @@ padding:10px;
 
     .block-text{
         position: relative;
+    }
+    .credit{
+        display: none;
+    }
+    #photos-about{
+        display: block;
     }
 }
 
