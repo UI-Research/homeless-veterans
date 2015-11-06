@@ -192,7 +192,7 @@ padding:10px;
 }
 @media(min-width:767px) {
     p {
-        margin: 0 0 35px;
+        margin: 0 0 15px;
         font-size: 18px;
         line-height: 1.6;
     }
