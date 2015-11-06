@@ -151,6 +151,13 @@ $(document).keydown(function(e) {
     e.preventDefault(); // prevent the default action (scroll / move caret)
 });
 
+$(".slide").on("swipeleft",function(){
+  goNext();
+});
+
+$(".slide").on("swiperight",function(){
+  goBack();
+});
 
 function goNext(){
     //get current slide ID
