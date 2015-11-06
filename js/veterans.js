@@ -4,7 +4,7 @@ var numSlides;
 var initialload = true;
 
 
-var chapterBreaks = [2,14,23,43];
+var chapterBreaks = [2,14,23,44];
 
 
 $( document ).ready(function() {
@@ -24,8 +24,20 @@ $( document ).ready(function() {
   }
 });
 
-function gotoslide(index){
-	// console.log("index is " + index);
+function gotoslide(index){ //goes to the slide with number specified in index
+
+    // custom click tracking
+    $(this)
+    .custom_analytics('track',{
+        category: "Vets slide",
+        action: "progress",
+        label: "slide goto",
+        value: index,
+        timing: true,
+        interaction: true
+    });
+
+
 	if (index == 0){
 		$(".next-back").addClass("btn-hidden");
 		if (initialload){
@@ -43,48 +55,47 @@ function gotoslide(index){
 
     $( "div.slide.active" ).addClass("transition");
 
-//when leaving a slide, turn off iframe
-$( "div.slide.active.transition" ).find("iframe").each(function(){
-    $(this).attr("data-src",$(this).attr("src"));
-    $(this).attr("src",'');
-});
-
-
-$('#slide_'+index).addClass("active");
-$( "div.slide.active.transition" ).removeClass("active");
-$( "div.slide.transition" ).removeClass("transition");
-
-if (index == numSlides){
-  $("#next-btn").addClass("btn-hidden");
-}else{
-  $("#next-btn").removeClass("btn-hidden");
-}
-
-//turn on all iframes on the slide
-var thisFrameSrc = $('#slide_'+index).find("iframe").attr("data-src");
-
-if (thisFrameSrc){
-    $('#slide_'+index).find("iframe").each(function(){
-        $(this).attr("src",$(this).attr("data-src"));
+    //when leaving a slide, turn off iframe
+    $( "div.slide.active.transition" ).find("iframe").each(function(){
+        $(this).attr("data-src",$(this).attr("src"));
+        $(this).attr("src",'');
     });
-}
-
-    // update URL
-    var newURL = updateURLParameter(window.location.href, 'slide', index);
-    newURL = updateURLParameter(newURL, 'slide', index);
 
 
-if (isIE () && isIE () < 10) {
- // is IE version less than 10
-} else {
- // is IE 10 and later or not IE
- var stateObj = { foo: "Veterans" };
-    history.pushState(stateObj, "Homeless on the Home Front", newURL);
+    $('#slide_'+index).addClass("active");
+    $( "div.slide.active.transition" ).removeClass("active");
+    $( "div.slide.transition" ).removeClass("transition");
 
-}
+    if (index == numSlides){
+      $("#next-btn").addClass("btn-hidden");
+    }else{
+      $("#next-btn").removeClass("btn-hidden");
+    }
+
+    //turn on all iframes on the slide
+    var thisFrameSrc = $('#slide_'+index).find("iframe").attr("data-src");
+
+    if (thisFrameSrc){
+        $('#slide_'+index).find("iframe").each(function(){
+            $(this).attr("src",$(this).attr("data-src"));
+        });
+    }
+
+        // update URL
+        var newURL = updateURLParameter(window.location.href, 'slide', index);
+        newURL = updateURLParameter(newURL, 'slide', index);
 
 
-    
+    if (isIE () && isIE () < 10) {
+     // is IE version less than 10
+    } else {
+     // is IE 10 and later or not IE
+     var stateObj = { foo: "Veterans" };
+        history.pushState(stateObj, "Homeless on the Home Front", newURL);
+
+    }
+
+
     //chapter navigation
     if (index == 0){ //home
         $(".chapter0").addClass("chapter-active");
@@ -158,6 +169,8 @@ $(".slide").on("swipeleft",function(){
 $(".slide").on("swiperight",function(){
   goBack();
 });
+
+
 
 function goNext(){
     //get current slide ID

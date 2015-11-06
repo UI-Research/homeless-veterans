@@ -49,6 +49,9 @@ ul{
 #photos-about{
     display: none;
 }
+#logo-sm{
+    display: none;
+}
 .start-btn{
     background: none;
     border: 2px solid #fff;
@@ -94,6 +97,12 @@ ul{
     }
     .intro-text{
         font-size: 14px;
+    }
+    #logo-sm{
+        display: block;
+    }
+    #logo-md{
+        display: none;
     }
 }
 
@@ -348,6 +357,12 @@ padding:10px;
         height: 100%;
         /*padding: 120px;*/
     }
+    #logo-sm{
+        display: block;
+    }
+    #logo-md{
+        display: none;
+    }
 
     .slide .intro-body .brand-heading {
         font-size: 30pt;
@@ -378,7 +393,7 @@ padding:10px;
     }
 
     .read-research{
-        bottom: 40px;
+        bottom: 30px;
     }
 
     .audio{
