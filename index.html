@@ -1,869 +1,605 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@urbaninstitute">
-    <meta name="twitter:creator" content="@urbaninstitute"/>
-    <meta name="twitter:title" content="Homeless on the Home Front">
-    <meta name="twitter:description" content="Can we end veteran homelessness? Here’s what the research tells us about one promising program.">
-    <meta name="twitter:image" content="http://apps.urban.org/features/homeless-veterans/img/001-20151007_VHPD_Thompson_0181-edit.jpg">;
-
-    <meta property="og:title" content="Homeless on the Home Front" />
-    <meta property="og:description" content="Can we end veteran homelessness? Here’s what the research tells us about one promising program." >
-    <meta property="og:image" content="http://apps.urban.org/features/homeless-veterans/img/001-20151007_VHPD_Thompson_0181-edit.jpg" >
-    <meta property="og:image:type" content="image/jpeg">
-    <meta property="og:image:width" content="400">
-    <meta property="og:image:height" content="400">
-    <meta property="og:url" content="http://urbn.is/veterans">;
-
-
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="summary" name="twitter:card">
+    <meta content="@urbaninstitute" name="twitter:site">
+    <meta content="@urbaninstitute" name="twitter:creator">
+    <meta content="Homeless on the Home Front" name="twitter:title">
+    <meta content="Can we end veteran homelessness? Here’s what the research tells us about one promising program." name="twitter:description">
+    <meta content="http://apps.urban.org/features/homeless-veterans/img/001-20151007_VHPD_Thompson_0181-edit.jpg" name="twitter:image">
     <title>Homeless on the Home Front</title>
-    <link rel="icon" target="_blank" href="favicon.ico" type="image/x-icon">
-
-    <!-- Bootstrap Core CSS -->
-    <link target="_blank" href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link target="_blank" href="css/images.css" rel="stylesheet">
-    <link target="_blank" href="css/veterans.css" rel="stylesheet">
-
-    <!-- Urban Theme CSS -->
-    <link rel="stylesheet/less" type="text/css" href="css/variables.less" />
-    <link target="_blank" href="css/color-column.css" rel="stylesheet">
-    <link target="_blank" href="css/charts.css" rel="stylesheet">
-    <link target="_blank" href="css/header.css" rel="stylesheet">
-    <link target="_blank" href="css/logos.css" rel="stylesheet">
-    <link target="_blank" href="css/urban-buttons.css" rel="stylesheet">
-    <!-- <link target="_blank" href="css/urban-text.css" rel="stylesheet"> -->
-
+    <meta content="Homeless on the Home Front">
+    <meta content="Can we end veteran homelessness? Here’s what the research tells us about one promising program.">
+    <meta content="http://apps.urban.org/features/homeless-veterans/img/001-20151007_VHPD_Thompson_0181-edit.jpg">
+    <meta content="image/jpeg">
+    <meta content="400">
+    <meta content="400">
+    <meta content="http://urbn.is/veterans">
+    <link href="favicon.ico" rel="icon" target="_blank" type="image/x-icon"><!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" target="_blank"><!-- Custom CSS -->
+    <link href="css/images.css" rel="stylesheet" target="_blank">
+    <link href="css/veterans.css" rel="stylesheet" target="_blank"><!-- Urban Theme CSS -->
+    <link href="css/variables.less" rel="stylesheet/less" type="text/css">
+    <link href="css/color-column.css" rel="stylesheet" target="_blank">
+    <link href="css/charts.css" rel="stylesheet" target="_blank">
+    <link href="css/header.css" rel="stylesheet" target="_blank">
+    <link href="css/logos.css" rel="stylesheet" target="_blank">
+    <link href="css/urban-buttons.css" rel="stylesheet" target="_blank"><!-- <link target="_blank" href="css/urban-text.css" rel="stylesheet"> -->
     <!-- Custom Fonts -->
-    <link target="_blank" href="font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link target="_blank" href="http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic,700italic" rel="stylesheet" type="text/css">
-
-    <!-- mapbox stuff -->
-    
+    <link href="font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet" target="_blank" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic,700italic" rel="stylesheet" target="_blank" type="text/css"><!-- mapbox stuff -->
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
-
 </head>
-
-    <body>
-
-        <!--    header-->
-        <div id="header-pinned" class="no-touch is-visible">
-            <div class="content">
-                <a target="_blank" href="http://www.urban.org" title="Home" rel="home" class="site-logo"></a>
-                <div class="title"><a href="http://www.urban.org/features" class="title-linkback">Features</a> <span>: :</span> <span id="top-nav-title">Homeless on the Home Front</span></div>
-                <div class="share-icons">
-                    <div class="shareThisP">
-                        <span onclick="toggle_visibility('shareBox');">
-                            <div class="shareThisB"></div>
-                        </span>
-                        <div class="shareThisW" id="shareBox">
-                            <div class="addthis_toolbox addthis_default_style  " addthis:title="" addthis:url="">
-                                <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//urbn.is/veterans" target="_blank" class="addthis_button_facebook at300b" title="Facebook" onclick="toggle_visibility('shareBox');"><span class="at4-icon aticon-facebook" style="background-color: rgb(48, 88, 145);"><span class="at_a11y">Share on facebook</span></span></a>
-
-                                <a href="http://twitter.com/intent/tweet?text=Homeless%20on%20the%20home%20front%3A%20How%20one%20program%20seeks%20to%20end%20veterans%27%20homelessness%20http%3A%2F%2Furbn.is%2Fveterans%20(via%20%40urbaninstitute)" target="_blank" class="addthis_button_twitter at300b" title="Tweet" onclick="toggle_visibility('shareBox');"><span class="at4-icon aticon-twitter" style="background-color: rgb(44, 168, 210);"><span class="at_a11y">Share on twitter</span></span></a>
-
-
-                                <a href="mailto:%20?Subject=New feature from the Urban Institute &amp;Body=Hi! I thought you'd be interested in this new feature from the Urban Institute: “Homeless on the Home Front: A Demonstration Program Shows Promise for Ending Veterans’ Homelessness” http://urbn.is/veterans" target="_blank" class="addthis_button_email at300b" target="_blank" title="Email" onclick="toggle_visibility('shareBox');"><span class="at4-icon aticon-email" style="background-color: rgb(115, 138, 141);"><span class="at_a11y">Share on email</span></span></a>
-                                <div class="atclear"></div>
-                            </div>
-
+<body>
+    <!--    header-->
+    <div class="no-touch is-visible" id="header-pinned">
+        <div class="content">
+            <a class="site-logo" href="http://www.urban.org" rel="home" target="_blank" title="Home"></a>
+            <div class="title">
+                <a class="title-linkback" href="http://www.urban.org/features">Features</a> <span>: :</span> <span id="top-nav-title">Homeless on the Home Front</span>
+            </div>
+            <div class="share-icons">
+                <div class="shareThisP">
+                    <span onclick="toggle_visibility('shareBox');"></span>
+                    <div class="shareThisB">
+                        <span onclick="toggle_visibility('shareBox');"></span>
+                    </div>
+                    <div class="shareThisW" id="shareBox">
+                        <div class="addthis_toolbox addthis_default_style">
+                            <a class="addthis_button_facebook at300b" href="https://www.facebook.com/sharer/sharer.php?u=http%3A//urbn.is/veterans" onclick="toggle_visibility('shareBox');" target="_blank" title="Facebook"><span class="at4-icon aticon-facebook" style="background-color: rgb(48, 88, 145);"><span class="at_a11y">Share on facebook</span></span></a> <a class="addthis_button_twitter at300b" href="http://twitter.com/intent/tweet?text=Homeless%20on%20the%20home%20front%3A%20How%20one%20program%20seeks%20to%20end%20veterans%27%20homelessness%20http%3A%2F%2Furbn.is%2Fveterans%20(via%20%40urbaninstitute)" onclick="toggle_visibility('shareBox');" target="_blank" title="Tweet"><span class="at4-icon aticon-twitter" style="background-color: rgb(44, 168, 210);"><span class="at_a11y">Share on twitter</span></span></a> <a class="addthis_button_email at300b" href="mailto:%20?Subject=New%20feature%20from%20the%20Urban%20Institute%20&amp;Body=Hi!%20I%20thought%20you'd%20be%20interested%20in%20this%20new%20feature%20from%20the%20Urban%20Institute:%20%E2%80%9CHomeless%20on%20the%20Home%20Front:%20A%20Demonstration%20Program%20Shows%20Promise%20for%20Ending%20Veterans%E2%80%99%20Homelessness%E2%80%9D%20http://urbn.is/veterans" onclick="toggle_visibility('shareBox');" target="_blank" title="Email"><span class="at4-icon aticon-email" style="background-color: rgb(115, 138, 141);"><span class="at_a11y">Share on email</span></span></a>
+                            <div class="atclear"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!--    end header-->
-
-        <!-- persistent elements -->
-
-        <div class="about"><a href="#">About</a></div>
-        <div class="chapter-nav">
-            <ul>
-              <li><a class="chapter0 chapter-active">Home</a></li>
-              <li><a class="chapter1">Struggling for Security</a></li>
-              <li><a class="chapter2">Seeking Help</a></li>
-              <li><a class="chapter3">VHPD in Texas</a></li>
-              <li><a class="chapter4">A Promising Future</a></li>
-          </ul>
-      </div>
-      <div class="next-back">
-        <a id="back-btn" target="" href="#" class="btn btn-circle circle-left page-scroll">
-            <i class="fa fa-angle-left animated"></i>
-        </a>
-        <a id="next-btn" target="" href="#" class="btn btn-circle circle-right page-scroll">
-            <i class="fa fa-angle-right animated"></i>
-        </a>
+    </div><!--    end header-->
+    <!-- persistent elements -->
+    <div class="about">
+        <a href="#">About</a>
     </div>
-
-    <!-- slide container -->
+    <div class="chapter-nav">
+        <ul>
+            <li>
+                <a class="chapter0 chapter-active">Home</a>
+            </li>
+            <li>
+                <a class="chapter1">Struggling for Security</a>
+            </li>
+            <li>
+                <a class="chapter2">Seeking Help</a>
+            </li>
+            <li>
+                <a class="chapter3">VHPD in Texas</a>
+            </li>
+            <li>
+                <a class="chapter4">A Promising Future</a>
+            </li>
+        </ul>
+    </div>
+    <div class="next-back">
+        <a class="btn btn-circle circle-left page-scroll" href="#" id="back-btn" target=""><i class="fa fa-angle-left animated"></i></a> <a class="btn btn-circle circle-right page-scroll" href="#" id="next-btn" target=""><i class="fa fa-angle-right animated"></i></a>
+    </div><!-- slide container -->
     <div style="height:100%;">
-
-
         <!-- title slide -->
-        <div class="slide active" >
+        <div class="slide active">
             <div class="image title-slide darker"></div>
             <div class="intro-body">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                           <p class="text-center" id="logo-md">  <a  style="margin: 0 auto;" href="http://www.urban.org" title="Home" rel="home" class="logo white-black md"></a></p>
-                           <p class="text-center" id="logo-sm">  <a  style="margin: 0 auto;" href="http://www.urban.org" title="Home" rel="home" class="logo white-black sm"></a></p>
-
-                           <h1 class="brand-heading text-center">Homeless on the Home Front</h1>
-                           <p class="subtitle text-center">A Demonstration Program Shows Promise for Ending Veterans’ Homelessness
-                           </p>
-
-
-
-                           <p class="text-center">
-                            <a  href="#"><button id="start" class="btn-lg start-btn">START</button></a>
-                        </p>
-
-
-
+                            <p class="text-center" id="logo-md"><a class="logo white-black md" href="http://www.urban.org" rel="home" style="margin: 0 auto;" title="Home"></a></p>
+                            <p class="text-center" id="logo-sm"><a class="logo white-black sm" href="http://www.urban.org" rel="home" style="margin: 0 auto;" title="Home"></a></p>
+                            <h1 class="brand-heading text-center">Homeless on the Home Front</h1>
+                            <p class="subtitle text-center">A Demonstration Program Shows Promise for Ending Veterans’ Homelessness</p>
+                            <p class="text-center"><a href="#"><button class="btn-lg start-btn" id="start">START</button></a></p>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-center"><a class="read-research" href="#"><button class="btn-primary" id="research-btn">READ THE RESEARCH</button></a></p>
+            </div>
+        </div><!-- intro -->
+        <div class="slide">
+            <div class="image introduction blur"></div>
+            <div class="intro-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <p class="intro-text">With many soldiers returning from wars in Iraq and Afghanistan in the late 2000s, the risk of homelessness significantly increased for veterans. Looking to avoid the difficulties that plagued so many Vietnam veterans, Congress, in 2009, authorized a veterans’ homelessness prevention and intervention demonstration program in support of President Barack Obama’s goal of ending veterans’ homelessness by 2016.</p>
+                            <p class="intro-text">The Housing and Urban Development (HUD), Veterans Affairs (VA), and Labor departments collaborated to implement the Veterans Homelessness Prevention Demonstration (VHPD), an ambitious program that aimed to prevent homelessness among veterans.</p>
+                            <p class="intro-text">The Urban Institute evaluated VHPD and found the outcomes for the 509 study participants promising. To learn more about this program, <a href="http://www.urban.org/" target="_blank">read the research</a>.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <p class="text-center">
-                <a href="#" class="read-research"><button id="research-btn" class="btn-primary">READ THE RESEARCH</button></a>
-            </p>
-        </div>
-    </div>
-
-    <!-- intro -->
-    <div class="slide" >
-        <div class="image introduction blur"></div>
-        <div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <p class="intro-text">With many soldiers returning from wars in Iraq and Afghanistan in the late 2000s, the risk of homelessness significantly increased for veterans. Looking to avoid the difficulties that plagued so many Vietnam veterans, Congress, in 2009, authorized a veterans’ homelessness prevention and intervention demonstration program in support of President Barack Obama’s goal of ending veterans’ homelessness by 2016.
-                        </p><p class="intro-text">
-                        The Housing and Urban Development (HUD), Veterans Affairs (VA), and Labor departments collaborated to implement the Veterans Homelessness Prevention Demonstration (VHPD), an ambitious program that aimed to prevent homelessness among veterans. 
-                    </p><p class="intro-text">
-                    The Urban Institute evaluated VHPD and found the outcomes for the 509 study participants promising. To learn more about this program, <a href="http://www.urban.org/" target="_blank">read the research</a>. 
-
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-
-<!-- ch1-title -->
-<div class="slide ch-1-title" >
-    <div>
-        <!-- full screen video code via demosthenes.info -->
-        <video class="full-screen" autoplay="" loop="" poster="../img/ch-1-title.jpg">
-            <source src="video/Chapter1_v2-compressed.mp4" type="video/mp4">
-                <source src="Chapter1_v2-compressed.webm" type="video/webm">
-                    Your browser does not support the video tag.
-                </video> 
+        </div><!-- ch1-title -->
+        <div class="slide ch-1-title">
+            <div>
+                <!-- full screen video code via demosthenes.info -->
+                <video autoplay="" class="full-screen" loop="" poster="../img/ch-1-title.jpg"><source src="video/Chapter1_v2-compressed.mp4" type="video/mp4"> <source src="Chapter1_v2-compressed.webm" type="video/webm"> Your browser does not support the video tag.</video>
             </div>
             <div class="intro-body text-center">
                 <div class="container">
-                    <div class="row " >
+                    <div class="row">
                         <div class="col-md-8 col-md-offset-2">
-                           <h4 class="chapter-kicker">Chapter 1</h4> <h1 class="brand-heading">Struggling for Security</h1>
-                       </div>
-                   </div>
-               </div>
-           </div>
-       </div>
-
-       <!-- Jannet-Intro -->
-       <div class="slide" >
-        <div class="image jannet-intro "></div>
-        <div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <p class="intro-text">
-                        </p>
+                            <h4 class="chapter-kicker">Chapter 1</h4>
+                            <h1 class="brand-heading">Struggling for Security</h1>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- Jannet-Intro -->
-    <div class="slide" >
-        <div class="image jannet-intro blur"></div>
-        <div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <p class="intro-text">After serving more than a dozen years in the army and the National Guard Reserve, Jannet Taylor, 50, found herself on the edge of homelessness in June 2012. Taylor experienced a sudden slew of challenges. She needed help, but felt great reluctance asking for it.
-                        </p>
+        </div><!-- Jannet-Intro -->
+        <div class="slide">
+            <div class="image jannet-intro"></div>
+            <div class="intro-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <p class="intro-text"></p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-
-    <!-- jannet sound slide -->
-    <div class="slide " >
-        <div class="image jannet-intro"></div>
-        <div class="intro-body audio-slide">
-            <div class="container audio-slide">
-                <div class="row audio-slide" >
-                    <div class="col-md-8 col-md-offset-2 audio-slide">
-                       <iframe id="jannet-intro-frame" class="audio" width="100%" height="110" scrolling="no" frameborder="no" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/230191022%3Fsecret_token%3Ds-fUYLJ&amp;color=1696d2&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;default_height=110&amp;show_artwork=false&amp;font=Lato&amp;theme_color=000000"></iframe>
-                   </div>
-               </div>
-           </div>
-       </div>
-   </div>
-
-   <!-- Jannet-house -->
-   <div class="slide" >
-    <div class="image jannet-house "></div>
-    <div class="intro-body">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <p class="intro-text">
-                    </p>
+        </div><!-- Jannet-Intro -->
+        <div class="slide">
+            <div class="image jannet-intro blur"></div>
+            <div class="intro-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <p class="intro-text">After serving more than a dozen years in the army and the National Guard Reserve, Jannet Taylor, 50, found herself on the edge of homelessness in June 2012. Taylor experienced a sudden slew of challenges. She needed help, but felt great reluctance asking for it.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
-<!-- Jannet-house -->
-<div class="slide" >
-    <div class="image jannet-house blur"></div>
-    <div class="intro-body">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <p class="intro-text">Housing insecurity is a significant problem among veterans. According to the National Low Income Housing Coalition, <a href=" http://nlihc.org/sites/default/files/NLIHC-Veteran-Report-2013.pdf" target="_blank">approximately 1.5 million veterans are paying more than 50 percent of their income toward rent</a>. Paying too much for rent leaves little room in a household's budget, making it difficult to save money or plan for emergencies. These circumstances leave veterans at risk for homelessness.
-                    </p>
+        </div><!-- jannet sound slide -->
+        <div class="slide">
+            <div class="image jannet-intro"></div>
+            <div class="intro-body audio-slide">
+                <div class="container audio-slide">
+                    <div class="row audio-slide">
+                        <div class="col-md-8 col-md-offset-2 audio-slide">
+                            <iframe class="audio" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/230191022%3Fsecret_token%3Ds-fUYLJ&amp;color=1696d2&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;default_height=110&amp;show_artwork=false&amp;font=Lato&amp;theme_color=000000" frameborder="no" height="110" id="jannet-intro-frame" name="jannet-intro-frame" scrolling="no" width="100%"></iframe>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
-
-<!-- ap-vets -->
-<div class="slide " >
-    <div class="image ap-vets"></div>
-
-    <p class="block-text ap bottom right">Veterans gather Thursday, November 10, 2011, at the armory in Humboldt Park in Chicago for an event sponsored by the VA. The vets received food, clothing, health screenings, VA and Social Security benefits, and employment counseling. <span class="credit">(AP Photo/Robert Ray)</span></p>
-</div>
-
-<!-- ap-vets -->
-<div class="slide" >
-    <div class="image ap-vets blur"></div>
-    <div class="intro-body">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <p class="intro-text">Veterans are overrepresented in the overall homeless population: though they make up only 8 percent of the total population, <a href="https://www.hudexchange.info/resources/documents/2014-AHAR-Part1.pdf" target="_blank">they are about 11 percent of all homeless adults counted in HUD’s January 2014 point-in-time counts</a>. 
-                    </p>
+        </div><!-- Jannet-house -->
+        <div class="slide">
+            <div class="image jannet-house"></div>
+            <div class="intro-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <p class="intro-text"></p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
-
-
-
-<!-- ap-women -->
-<div class="slide " >
-    <div class="image ap-women"></div>
-
-    <p class="block-text ap bottom right">Specialist Karen Arvizu, left, puts on her hydration pack in preparation for her role as a volunteer in a physical demands study, Tuesday, February 25, 2014, in Fort Stewart, Georgia. (AP Photo/Stephen B. Morton)</p>
-</div>
-
-
-<!-- ap-women -->
-<div class="slide" >
-    <div class="image ap-women blur"></div>
-    <div class="intro-body">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <p class="intro-text">Similarly, more women veterans are becoming homeless. <a href="https://www.hudexchange.info/onecpd/assets/File/2013-AHAR-Part-2.pdf" target="_blank">HUD data show that, in 2013, an additional 1,891 women veterans received emergency shelter or transitional housing services</a>. 
-                    </p><p class="intro-text">
-                    And homeless women veterans face unique obstacles to stable housing, such as a higher risk of having experienced sexual trauma while in the military.
-                </p><p class="intro-text">
-                These trends reflect the large increase in women who joined the military over the last decade. <a href="http://www.gao.gov/products/GAO-12-182" target="_blank">The US Government Accountability Office estimates that approximately 1.8 million—or 8 percent—of veterans are now women</a>.
-
-            </p>
-        </div>
-    </div>
-</div>
-</div>
-</div>
-
-<!-- veterans homelessness graphic-->
-<div class="slide" >
-    <div class="image ap-silhouette-graph "></div>
-    <div class="intro-body">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 center-block-text">
-                    <h3>Homeless Veterans</h3>
-                    <p class="">The transient nature of homelessness makes getting flawless population counts near impossible, however, <a href="https://www.hudexchange.info/resources/documents/2014-AHAR-Part1.pdf" target="_blank">in 2014, HUD estimated that 49,933 veterans were homeless on any given night</a>.
-                    </p>
-
-                    <img class="chart" src="graphics/homeless-veterans-01.png"/>
-
-                    <p class="graphic-credit">Source: <a href="https://www.hudexchange.info/resources/documents/2014-AHAR-Part1.pdf" target="_blank">Henry, Cortes, Shivji, and Buck, 2014, <em>The 2014 Annual Homeless Assessment Report (AHAR) to Congress: Part 1 Point-in-Time Estimates of Homelessness,</em> Washington, DC: US Department of Housing and Urban Development.</a>
-                    </p>
+        </div><!-- Jannet-house -->
+        <div class="slide">
+            <div class="image jannet-house blur"></div>
+            <div class="intro-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <p class="intro-text">Housing insecurity is a significant problem among veterans. According to the National Low Income Housing Coalition, <a href="%20http://nlihc.org/sites/default/files/NLIHC-Veteran-Report-2013.pdf" target="_blank">approximately 1.5 million veterans are paying more than 50 percent of their income toward rent</a>. Paying too much for rent leaves little room in a household's budget, making it difficult to save money or plan for emergencies. These circumstances leave veterans at risk for homelessness.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <p class="block-text ap bottom right"><span class="credit">(AP Photo/Mark Wilson, Pool)</span></p>
-    </div>
-</div>
-
-<!-- returning veterans  graphic-->
-<div class="slide" >
-    <div class="image ap-silhouette-graph "></div>
-    <div class="intro-body">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2 center-block-text">
-                    <h3>Total Military Separations</h3>
-                    <p class="">With a large number of future veterans on the horizon, it is a critical time for preventing the next generation from slipping into poverty and homelessness. VHPD provides many lessons that policymakers can use to craft solutions going forward. 
-                    </p>
-
-                    <img class="chart" src="graphics/homeless-veterans-02.png"/>
-                    <p class="graphic-credit">Source: US Department of Veterans Affairs, Office of Policy and Planning (special tablulations produced at the request of the Urban Institute for this project).
-                    </p>
+        </div><!-- ap-vets -->
+        <div class="slide">
+            <div class="image ap-vets"></div>
+            <p class="block-text ap bottom right">Veterans gather Thursday, November 10, 2011, at the armory in Humboldt Park in Chicago for an event sponsored by the VA. The vets received food, clothing, health screenings, VA and Social Security benefits, and employment counseling. <span class="credit">(AP Photo/Robert Ray)</span></p>
+        </div><!-- ap-vets -->
+        <div class="slide">
+            <div class="image ap-vets blur"></div>
+            <div class="intro-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <p class="intro-text">Veterans are overrepresented in the overall homeless population: though they make up only 8 percent of the total population, <a href="https://www.hudexchange.info/resources/documents/2014-AHAR-Part1.pdf" target="_blank">they are about 11 percent of all homeless adults counted in HUD’s January 2014 point-in-time counts</a>.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-        </div>
-        <p class="block-text ap bottom right"><span class="credit">(AP Photo/Mark Wilson, Pool)</span></p>
-    </div>
-</div>
-
-
-
-
-<!-- ch2-title -->
-<div class="slide ch-2-title" >
-    <div>
-        <!-- full screen video code via demosthenes.info -->
-        <video class="full-screen" autoplay="" loop="" poster="../img/ch-2-title.jpg">
-            <source src="video/Chapter2_v1-compressed.mp4" type="video/mp4">
-                <source src="Chapter2_v1-compressed.webm" type="video/webm">
-                    Your browser does not support the video tag.
-                </video> 
+        </div><!-- ap-women -->
+        <div class="slide">
+            <div class="image ap-women"></div>
+            <p class="block-text ap bottom right">Specialist Karen Arvizu, left, puts on her hydration pack in preparation for her role as a volunteer in a physical demands study, Tuesday, February 25, 2014, in Fort Stewart, Georgia. (AP Photo/Stephen B. Morton)</p>
+        </div><!-- ap-women -->
+        <div class="slide">
+            <div class="image ap-women blur"></div>
+            <div class="intro-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <p class="intro-text">Similarly, more women veterans are becoming homeless. <a href="https://www.hudexchange.info/onecpd/assets/File/2013-AHAR-Part-2.pdf" target="_blank">HUD data show that, in 2013, an additional 1,891 women veterans received emergency shelter or transitional housing services</a>.</p>
+                            <p class="intro-text">And homeless women veterans face unique obstacles to stable housing, such as a higher risk of having experienced sexual trauma while in the military.</p>
+                            <p class="intro-text">These trends reflect the large increase in women who joined the military over the last decade. <a href="http://www.gao.gov/products/GAO-12-182" target="_blank">The US Government Accountability Office estimates that approximately 1.8 million—or 8 percent—of veterans are now women</a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- veterans homelessness graphic-->
+        <div class="slide">
+            <div class="image ap-silhouette-graph"></div>
+            <div class="intro-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2 center-block-text">
+                            <h3>Homeless Veterans</h3>
+                            <p class="">The transient nature of homelessness makes getting flawless population counts near impossible, however, <a href="https://www.hudexchange.info/resources/documents/2014-AHAR-Part1.pdf" target="_blank">in 2014, HUD estimated that 49,933 veterans were homeless on any given night</a>.</p><img class="chart" src="graphics/homeless-veterans-01.png">
+                            <p class="graphic-credit">Source: <a href="https://www.hudexchange.info/resources/documents/2014-AHAR-Part1.pdf" target="_blank">Henry, Cortes, Shivji, and Buck, 2014, <em>The 2014 Annual Homeless Assessment Report (AHAR) to Congress: Part 1 Point-in-Time Estimates of Homelessness,</em> Washington, DC: US Department of Housing and Urban Development.</a></p>
+                        </div>
+                    </div>
+                </div>
+                <p class="block-text ap bottom right"><span class="credit">(AP Photo/Mark Wilson, Pool)</span></p>
+            </div>
+        </div><!-- returning veterans  graphic-->
+        <div class="slide">
+            <div class="image ap-silhouette-graph"></div>
+            <div class="intro-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2 center-block-text">
+                            <h3>Total Military Separations</h3>
+                            <p class="">With a large number of future veterans on the horizon, it is a critical time for preventing the next generation from slipping into poverty and homelessness. VHPD provides many lessons that policymakers can use to craft solutions going forward.</p><img class="chart" src="graphics/homeless-veterans-02.png">
+                            <p class="graphic-credit">Source: US Department of Veterans Affairs, Office of Policy and Planning (special tablulations produced at the request of the Urban Institute for this project).</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="block-text ap bottom right"><span class="credit">(AP Photo/Mark Wilson, Pool)</span></p>
+            </div>
+        </div><!-- ch2-title -->
+        <div class="slide ch-2-title">
+            <div>
+                <!-- full screen video code via demosthenes.info -->
+                <video autoplay="" class="full-screen" loop="" poster="../img/ch-2-title.jpg"><source src="video/Chapter2_v1-compressed.mp4" type="video/mp4"> <source src="Chapter2_v1-compressed.webm" type="video/webm"> Your browser does not support the video tag.</video>
             </div>
             <div class="intro-body text-center">
                 <div class="container">
-                    <div class="row " >
+                    <div class="row">
                         <div class="col-md-8 col-md-offset-2">
-                           <h4 class="chapter-kicker">Chapter 2</h4> <h1 class="brand-heading">Seeking Help</h1>
-                       </div>
-                   </div>
-               </div>
-           </div>
-       </div>
-
-       <!-- va-audio slide -->
-       <div class="slide " >
-        <div class="image VA-audio"></div>
-        <div class="intro-body audio-slide">
-            <div class="container audio-slide">
-                <div class="row audio-slide" >
-                    <div class="col-md-8 col-md-offset-2 audio-slide">
-                       <iframe id="va-audio-frame" class="audio" width="100%" height="110" scrolling="no" frameborder="no" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/230219513%3Fsecret_token%3Ds-AvmS2&amp;color=1696d2&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;default_height=110&amp;show_artwork=false&amp;font=Lato&amp;theme_color=000000"></iframe>
-                   </div>
-
-
-
-               </div>
-           </div>
-       </div>
-   </div>
-
-   <!-- va-audio caption -->
-   <div class="slide " >
-    <div class="image VA-audio "></div>
-    <div class="intro-body">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2 center-block-text">
-                    <p class="">Veterans in Central Texas can come to this office at the VA’s Austin Outpatient Clinic to seek help when they are on the verge of losing their housing or are without a place to live. The facility opened in July 2013, more than two years after VHPD was rolled out, and was used as a place to enroll veterans in the demonstration program.</p>
+                            <h4 class="chapter-kicker">Chapter 2</h4>
+                            <h1 class="brand-heading">Seeking Help</h1>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-        </div>
-    </div>
-</div>
-
-
-<!-- ap-shinseki-audio -->
-<div class="slide " >
-    <div class="image AP-shinseki-audio"></div>
-    <div class="intro-body audio-slide">
-        <div class="container audio-slide">
-            <div class="row audio-slide" >
-                <div class="col-md-8 col-md-offset-2 audio-slide">
-                   <iframe id="shinseki-audio-frame" class="audio" width="100%" height="110" scrolling="no" frameborder="no" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/230219694%3Fsecret_token%3Ds-iwmhO&amp;color=1696d2&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;default_height=110&amp;show_artwork=false&amp;font=Lato&amp;theme_color=000000"></iframe>
-
-                   <p style="
-                   bottom: 0px;
-                   position: absolute;
-                   font-size: 14px;
-                   "><span class="credit"><a href="http://www.c-span.org/video/?289768-1/homeless-veterans" target="_blank">Audio from CSPAN</a></span></p>
-               </div>
-           </div>
-       </div>
-
-   </div>
-</div>
-
-
-<!-- ap-shinseki text blur slide -->
-<div class="slide" >
-    <div class="image AP-shinseki-audio blur"></div>
-    <div class="intro-body">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <p class="intro-text">In 2009, four-star, army General Eric Shinseki became the seventh VA secretary. At the top of his to-do list was <a href="http://www.c-span.org/video/?289768-1/homeless-veterans" target="_blank">forming a strategy to combat homelessness among veterans and launching a campaign to end it</a>. Several housing assistance programs are critical to this effort. The HUD-Veterans Affairs Supportive Housing program provides permanent housing plus services to veterans in need; Supportive Services for Veteran Families provides rapid re-housing and prevention; and VHPD targeted recent veterans, focusing primarily on homelessness prevention.
-                    </p><p class="intro-text">
-                    Specifically, VHPD provided short- to medium-term housing assistance and supports that aimed to keep veterans from becoming homeless, or help those who were homeless get housing quickly. Simultaneously, it aimed to help veterans access benefits and generate the income and earnings they need to prevent housing instability in the future.
-                </p><p class="intro-text">
-                For its part, the VA awarded $5 million to VA grantees to provide case management and outreach services for the VHPD program. 
-            </p>
-        </div>
-    </div>
-</div>
-<p class="block-text ap bottom right"><span class="credit">(Paul Morigi/AP Images for The National Association of Drug Court Professionals)</span></p>
-</div>
-</div>
-
-<!-- ap-donnovan text blur slide -->
-<div class="slide" >
-    <div class="image AP-Donovan "></div>
-    <div class="intro-body">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 center-block-text col-md-offset-2">
-                    <p class="intro-text">Led by then secretary Shaun Donovan, HUD also played a prominent role in the administration and execution of VHPD.
-                    </p><p class="intro-text">
-                    Working with the VA and the US Department of Labor, HUD selected five military bases and their surrounding communities to be the proving grounds for VHPD. Each site received $2 million from HUD for outreach and programming.
-                </p><p class="intro-text">
-                The Department of Labor served VHPD participants through its existing veteran employment programs.
-            </p>
-        </div>
-    </div>
-</div>
-
-</div>
-</div>
-
-<!-- donnovan block slide 
+        </div><!-- va-audio slide -->
+        <div class="slide">
+            <div class="image VA-audio"></div>
+            <div class="intro-body audio-slide">
+                <div class="container audio-slide">
+                    <div class="row audio-slide">
+                        <div class="col-md-8 col-md-offset-2 audio-slide">
+                            <iframe class="audio" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/230219513%3Fsecret_token%3Ds-AvmS2&amp;color=1696d2&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;default_height=110&amp;show_artwork=false&amp;font=Lato&amp;theme_color=000000" frameborder="no" height="110" id="va-audio-frame" name="va-audio-frame" scrolling="no" width="100%"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- va-audio caption -->
+        <div class="slide">
+            <div class="image VA-audio"></div>
+            <div class="intro-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2 center-block-text">
+                            <p class="">Veterans in Central Texas can come to this office at the VA’s Austin Outpatient Clinic to seek help when they are on the verge of losing their housing or are without a place to live. The facility opened in July 2013, more than two years after VHPD was rolled out, and was used as a place to enroll veterans in the demonstration program.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- ap-shinseki-audio -->
+        <div class="slide">
+            <div class="image AP-shinseki-audio"></div>
+            <div class="intro-body audio-slide">
+                <div class="container audio-slide">
+                    <div class="row audio-slide">
+                        <div class="col-md-8 col-md-offset-2 audio-slide">
+                            <iframe class="audio" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/230219694%3Fsecret_token%3Ds-iwmhO&amp;color=1696d2&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;default_height=110&amp;show_artwork=false&amp;font=Lato&amp;theme_color=000000" frameborder="no" height="110" id="shinseki-audio-frame" name="shinseki-audio-frame" scrolling="no" width="100%"></iframe>
+                            <p style=" bottom: 0px; position: absolute; font-size: 14px;"><span class="credit"><a href="http://www.c-span.org/video/?289768-1/homeless-veterans" target="_blank">Audio from CSPAN</a></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- ap-shinseki text blur slide -->
+        <div class="slide">
+            <div class="image AP-shinseki-audio blur"></div>
+            <div class="intro-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <p class="intro-text">In 2009, four-star, army General Eric Shinseki became the seventh VA secretary. At the top of his to-do list was <a href="http://www.c-span.org/video/?289768-1/homeless-veterans" target="_blank">forming a strategy to combat homelessness among veterans and launching a campaign to end it</a>. Several housing assistance programs are critical to this effort. The HUD-Veterans Affairs Supportive Housing program provides permanent housing plus services to veterans in need; Supportive Services for Veteran Families provides rapid re-housing and prevention; and VHPD targeted recent veterans, focusing primarily on homelessness prevention.</p>
+                            <p class="intro-text">Specifically, VHPD provided short- to medium-term housing assistance and supports that aimed to keep veterans from becoming homeless, or help those who were homeless get housing quickly. Simultaneously, it aimed to help veterans access benefits and generate the income and earnings they need to prevent housing instability in the future.</p>
+                            <p class="intro-text">For its part, the VA awarded $5 million to VA grantees to provide case management and outreach services for the VHPD program.</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="block-text ap bottom right"><span class="credit">(Paul Morigi/AP Images for The National Association of Drug Court Professionals)</span></p>
+            </div>
+        </div><!-- ap-donnovan text blur slide -->
+        <div class="slide">
+            <div class="image AP-Donovan"></div>
+            <div class="intro-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 center-block-text col-md-offset-2">
+                            <p class="intro-text">Led by then secretary Shaun Donovan, HUD also played a prominent role in the administration and execution of VHPD.</p>
+                            <p class="intro-text">Working with the VA and the US Department of Labor, HUD selected five military bases and their surrounding communities to be the proving grounds for VHPD. Each site received $2 million from HUD for outreach and programming.</p>
+                            <p class="intro-text">The Department of Labor served VHPD participants through its existing veteran employment programs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- donnovan block slide 
 <div class="slide " >
     <div class="image AP-Donovan"></div>
     <p class="block-text ap bottom right"></p>
 </div>-->
-
-
-<!-- interactive map slide v2 -->
-<div class="slide" >
-    <div class="image VHPD-map" style="min-height=1000px; height=100%">
-        <iframe class="map-frame" width="100%" height="100%" frame-border="none" data-src="https://api.mapbox.com/v4/urbaninstitute.nok9p4i6/zoompan.html?access_token=pk.eyJ1IjoidXJiYW5pbnN0aXR1dGUiLCJhIjoiTEJUbmNDcyJ9.mbuZTy4hI_PWXw3C3UFbDQ" style="top:  50px; position: fixed;"></iframe>
-    </div>
-    <div class="intro-body">
-        <div class="container" style="pointer-events:none;">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="col-md-10 col-md-offset-1">
-                        <p class="intro-text">VHPD was implemented in five areas: New York (upstate); San Diego, California; Tacoma, Washington; Tampa Bay, Florida; and Texas (central).
-                        </p><p class="intro-text">
-                        The demonstration became one of the first programs to exclusively serve at-risk veterans and their families and the only one to specifically target post-9/11, women, National Guard, and reserve-unit veterans, as well as those with children.
-                    </p><p class="intro-text">
-                    It operated from <a style="pointer-events:all;" href="https://www.hudexchange.info/resources/documents/2014-AHAR-Part1.pdf" target="_blank">2011 to 2014 and served 4,824 adults and children, including 2,023 veterans</a>. The demonstration primarily focused on homelessness prevention, but it also used rapid re-housing strategies to help veterans who recently became homeless.  
-                </p><p class="intro-text">
-                Between the partner agencies and organizations, an array of services was provided to enrollees, including housing assistance and connections to health care and employment services that aimed to put veterans on paths to long-term housing sustainability.</p>
-
+        <!-- interactive map slide v2 -->
+        <div class="slide">
+            <div class="image VHPD-map" style="min-height=1000px; height=100%">
+                <iframe class="map-frame" data-src="https://api.mapbox.com/v4/urbaninstitute.nok9p4i6/zoompan.html?access_token=pk.eyJ1IjoidXJiYW5pbnN0aXR1dGUiLCJhIjoiTEJUbmNDcyJ9.mbuZTy4hI_PWXw3C3UFbDQ" height="100%" style="top: 50px; position: fixed;" width="100%"></iframe>
             </div>
-
-        </div>
-    </div>
-</div>
-</div>
-</div>
-
-<!-- wh-obama block slide -->
-<div class="slide " >
-    <div class="image WH-Obama"></div>
-    <p class="block-text ap bottom right">President Barack Obama in Bagram Airfield in Afghanistan visiting with a platoon of US troops that recently lost six members, December 3, 2010. <span class="credit">(Official White House photo by Pete Souza)</span></p>
-</div>
-
-<!-- wh-obama blur slide -->
-<div class="slide" >
-    <div class="image WH-Obama blur"></div>
-    <div class="intro-body">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <p class="intro-text">To date, the campaign to end veterans' homelessness has made substantial progress. <a  href="https://www.hudexchange.info/resources/documents/2014-AHAR-Part1.pdf" target="_blank">According to HUD’s 2014 point-in-time count, the number of homeless veterans is down 33 percent since 2009.</a> There is more work to be done. 
-                    </p><p class="intro-text">
-                    Using the lessons learned from the VHPD program, the Obama administration, future administrations, HUD, the VA, and the Department of Labor can continue to reduce the number of homeless veterans.
-                </p>
+            <div class="intro-body">
+                <div class="container" style="pointer-events:none;">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="col-md-10 col-md-offset-1">
+                                <p class="intro-text">VHPD was implemented in five areas: New York (upstate); San Diego, California; Tacoma, Washington; Tampa Bay, Florida; and Texas (central).</p>
+                                <p class="intro-text">The demonstration became one of the first programs to exclusively serve at-risk veterans and their families and the only one to specifically target post-9/11, women, National Guard, and reserve-unit veterans, as well as those with children.</p>
+                                <p class="intro-text">It operated from <a href="https://www.hudexchange.info/resources/documents/2014-AHAR-Part1.pdf" style="pointer-events:all;" target="_blank">2011 to 2014 and served 4,824 adults and children, including 2,023 veterans</a>. The demonstration primarily focused on homelessness prevention, but it also used rapid re-housing strategies to help veterans who recently became homeless.</p>
+                                <p class="intro-text">Between the partner agencies and organizations, an array of services was provided to enrollees, including housing assistance and connections to health care and employment services that aimed to put veterans on paths to long-term housing sustainability.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-</div>
-</div>
-
-
-<!-- ch3-title -->
-<div class="slide ch-3-title" >
-    <div>
-        <!-- full screen video code via demosthenes.info -->
-        <video class="full-screen" autoplay="" loop="" poster="../img/ch-3-title.jpg">
-            <source src="video/Chapter3_v1-compressed.mp4" type="video/mp4">
-                <source src="Chapter3_v1-compressed.webm" type="video/webm">
-                    Your browser does not support the video tag.
-                </video> 
+        </div><!-- wh-obama block slide -->
+        <div class="slide">
+            <div class="image WH-Obama"></div>
+            <p class="block-text ap bottom right">President Barack Obama in Bagram Airfield in Afghanistan visiting with a platoon of US troops that recently lost six members, December 3, 2010. <span class="credit">(Official White House photo by Pete Souza)</span></p>
+        </div><!-- wh-obama blur slide -->
+        <div class="slide">
+            <div class="image WH-Obama blur"></div>
+            <div class="intro-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <p class="intro-text">To date, the campaign to end veterans' homelessness has made substantial progress. <a href="https://www.hudexchange.info/resources/documents/2014-AHAR-Part1.pdf" target="_blank">According to HUD’s 2014 point-in-time count, the number of homeless veterans is down 33 percent since 2009.</a> There is more work to be done.</p>
+                            <p class="intro-text">Using the lessons learned from the VHPD program, the Obama administration, future administrations, HUD, the VA, and the Department of Labor can continue to reduce the number of homeless veterans.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- ch3-title -->
+        <div class="slide ch-3-title">
+            <div>
+                <!-- full screen video code via demosthenes.info -->
+                <video autoplay="" class="full-screen" loop="" poster="../img/ch-3-title.jpg"><source src="video/Chapter3_v1-compressed.mp4" type="video/mp4"> <source src="Chapter3_v1-compressed.webm" type="video/webm"> Your browser does not support the video tag.</video>
             </div>
             <div class="intro-body text-center">
                 <div class="container">
-                    <div class="row " >
+                    <div class="row">
                         <div class="col-md-8 col-md-offset-2">
-                           <h4 class="chapter-kicker">Chapter 3</h4> <h1 class="brand-heading">VHPD in Texas</h1>
-                       </div>
-                   </div>
-               </div>
-           </div>
-       </div>
-
-       <!-- jannet va sound slide -->
-       <div class="slide " >
-        <div class="image Jannet-VA-audio"></div>
-        <div class="intro-body audio-slide">
-            <div class="container audio-slide">
-                <div class="row audio-slide" >
-                    <div class="col-md-8 col-md-offset-2 audio-slide">
-                       <iframe id="jannet-va-frame" class="audio" width="100%" height="110" scrolling="no" frameborder="no" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/230219636%3Fsecret_token%3Ds-3JkVo&amp;color=1696d2&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;default_height=110&amp;show_artwork=false&amp;font=Lato&amp;theme_color=000000"></iframe>
-                   </div>
-               </div>
-           </div>
-       </div>
-   </div>
-
-
-
-   <!-- tx landscape text-->
-   <div class="slide" >
-    <div class="image tx-landscape-text darker"></div>
-    <div class="intro-body">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-10 col-md-offset-1">
-                    <p class="intro-text">Central Texas is home to 252,000 veterans, and VHPD’s success in this region showcases some promising strategies and practices that could aid in the fight to end homelessness among veterans.
-                    </p><p class="intro-text">
-
-                    Within the region’s borders stands Fort Hood, a massive 214,000-acre base that is home to more than 45,000 soldiers and about 9,000 civilian employees, making it the most populated US military base in the world. 
-                </p><p class="intro-text">
-
-                Like Jannet Taylor, many veterans who were based at Fort Hood during their time of service stay in the area after leaving the military. 
- </p><!-- <p class="intro-text">
+                            <h4 class="chapter-kicker">Chapter 3</h4>
+                            <h1 class="brand-heading">VHPD in Texas</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- jannet va sound slide -->
+        <div class="slide">
+            <div class="image Jannet-VA-audio"></div>
+            <div class="intro-body audio-slide">
+                <div class="container audio-slide">
+                    <div class="row audio-slide">
+                        <div class="col-md-8 col-md-offset-2 audio-slide">
+                            <iframe class="audio" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/230219636%3Fsecret_token%3Ds-3JkVo&amp;color=1696d2&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;default_height=110&amp;show_artwork=false&amp;font=Lato&amp;theme_color=000000" frameborder="no" height="110" id="jannet-va-frame" name="jannet-va-frame" scrolling="no" width="100%"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- tx landscape text-->
+        <div class="slide">
+            <div class="image tx-landscape-text darker"></div>
+            <div class="intro-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+                            <p class="intro-text">Central Texas is home to 252,000 veterans, and VHPD’s success in this region showcases some promising strategies and practices that could aid in the fight to end homelessness among veterans.</p>
+                            <p class="intro-text">Within the region’s borders stands Fort Hood, a massive 214,000-acre base that is home to more than 45,000 soldiers and about 9,000 civilian employees, making it the most populated US military base in the world.</p>
+                            <p class="intro-text">Like Jannet Taylor, many veterans who were based at Fort Hood during their time of service stay in the area after leaving the military.</p><!-- <p class="intro-text">
 
  Central Texas was selected as a VHPD demonstration site to find out if this combination of services could work for so many at-risk veterans living over such a wide swath of land.</p> -->
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<!-- tx-map interactive map slide v2 -->
-<div class="slide" >
-    <div class="image tx-map" style="min-height=1000px; height=100%">
-        <iframe  class="map-frame" width="100%" height="100%" frame-border="none" data-src="https://api.mapbox.com/v4/urbaninstitute.noceobji/zoompan.html?access_token=pk.eyJ1IjoidXJiYW5pbnN0aXR1dGUiLCJhIjoiTEJUbmNDcyJ9.mbuZTy4hI_PWXw3C3UFbDQ" style="top:  50px; position: fixed;"></iframe>
-    </div>
-    <div class="intro-body">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="col-md-8 col-md-offset-2">
-                        <p class="intro-text">Covering more than 5,000 square miles of territory in Central Texas, VHPD served veterans living in Bell, Coryell, McLennan, Travis, and Williamson counties.</p>
-
+                        </div>
                     </div>
-
+                </div>
+            </div>
+        </div><!-- tx-map interactive map slide v2 -->
+        <div class="slide">
+            <div class="image tx-map" style="min-height=1000px; height=100%">
+                <iframe class="map-frame" data-src="https://api.mapbox.com/v4/urbaninstitute.noceobji/zoompan.html?access_token=pk.eyJ1IjoidXJiYW5pbnN0aXR1dGUiLCJhIjoiTEJUbmNDcyJ9.mbuZTy4hI_PWXw3C3UFbDQ" height="100%" style="top: 50px; position: fixed;" width="100%"></iframe>
+            </div>
+            <div class="intro-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="col-md-8 col-md-offset-2">
+                                <p class="intro-text">Covering more than 5,000 square miles of territory in Central Texas, VHPD served veterans living in Bell, Coryell, McLennan, Travis, and Williamson counties.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- jannet comp and blur -->
+        <div class="slide">
+            <div class="image jannet-comp-caption"></div>
+        </div>
+        <div class="slide">
+            <div class="image jannet-comp-caption blur"></div>
+            <div class="intro-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <p class="intro-text">After leaving the Army, Taylor drove a school bus, worked as a teacher’s assistant, served in the National Guard Reserve, and completed her bachelor’s degree in psychology at Tarleton State University, all while raising her daughter on her own.</p>
+                            <p class="intro-text">After completing her degree in 2004, Taylor began her career in nonprofit social service work. But all of that came crashing to a halt when her employer’s grant funding ran out and her position was eliminated.</p>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- jannet home and blur -->
+        <div class="slide">
+            <div class="image home-caption"></div>
+        </div>
+        <div class="slide">
+            <div class="image home-caption blur"></div>
+            <div class="intro-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <p class="intro-text">At risk was Taylor’s rental home, where she and her daughter had lived since 2011 and where she had fought and beat stage-three breast cancer.</p>
+                            <p class="intro-text">But Taylor worked in social services for eight years and was keenly aware of the attitudes that many show toward homeless people seeking help.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- jannet store and blur -->
+        <div class="slide">
+            <div class="image jannet-store-caption"></div>
+        </div>
+        <div class="slide">
+            <div class="image jannet-store-caption blur"></div>
+            <div class="intro-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <p class="intro-text">On the brink of losing her rental housing, Taylor learned of VHPD when she went to The Salvation Army for help with paying her electric bill. While in line, she was given outreach materials for the new program.</p>
+                            <p class="intro-text">After a friend encouraged her to follow up on the tip, Taylor went to the Killeen Heights Vet Center in Harker Heights and enrolled in VHPD.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-
-
-
-<!-- jannet comp and blur -->
-<div class="slide " >
-    <div class="image jannet-comp-caption "></div>
-
-</div>
-
-<div class="slide " >
-    <div class="image jannet-comp-caption blur"></div>
-    <div class="intro-body">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <p class="intro-text">
-                        After leaving the Army, Taylor drove a school bus, worked as a teacher’s assistant, served in the National Guard Reserve, and completed her bachelor’s degree in psychology at Tarleton State University, all while raising her daughter on her own.
-                    </p><p class="intro-text">
-
-                    After completing her degree in 2004, Taylor began her career in nonprofit social service work. But all of that came crashing to a halt when her employer’s grant funding ran out and her position was eliminated.  
-                </p>
-
-            </p>
-        </div>
-    </div>
-</div>
-</div>
-</div>
-
-<!-- jannet home and blur -->
-<div class="slide " >
-    <div class="image home-caption "></div>
-
-</div>
-
-<div class="slide " >
-    <div class="image home-caption blur"></div>
-    <div class="intro-body">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <p class="intro-text">
-                        At risk was Taylor’s rental home, where she and her daughter had lived since 2011 and where she had fought and beat stage-three breast cancer.
-                    </p><p class="intro-text">
-                    But Taylor worked in social services for eight years and was keenly aware of the attitudes that many show toward homeless people seeking help.
-
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-
-
-<!-- jannet store and blur -->
-<div class="slide " >
-    <div class="image jannet-store-caption "></div>
-
-</div>
-
-<div class="slide " >
-    <div class="image jannet-store-caption blur"></div>
-    <div class="intro-body">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <p class="intro-text">
-                        On the brink of losing her rental housing, Taylor learned of VHPD when she went to The Salvation Army for help with paying her electric bill. While in line, she was given outreach materials for the new program.
-                    </p><p class="intro-text">
-
-                    After a friend encouraged her to follow up on the tip, Taylor went to the Killeen Heights Vet Center in Harker Heights and enrolled in VHPD.
-
-
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-<div class="slide " >
-    <div class="image jannet-hand-caption blur"></div>
-    <div class="intro-body">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <p class="intro-text">
-                        From there, a case worker from The Salvation Army set up short-term financial supports that helped her pay for her rent and utility bills.
-                    </p><p class="intro-text">
-
-                    The caseworker also sent a letter to Taylor’s landlord explaining what VHPD was and how it was going to ensure the rent got paid on time.
-                </p><p class="intro-text">
-
-                With eviction staved off, Taylor’s next challenge was to find the income she needed to pay for her housing and living expenses.
-            </p>
-        </div>
-    </div>
-</div>
-</div>
-</div>
-
-<!-- jannet hand and blur -->
-<div class="slide " >
-    <div class="image jannet-hand-caption "></div>
-
-</div>
-
-
-
-<!-- jannet hall and blur -->
-<div class="slide " >
-    <div class="image jannet-hall-caption "></div>
-
-</div>
-
-<div class="slide " >
-    <div class="image jannet-hall-caption blur"></div>
-    <div class="intro-body">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <p class="intro-text">
-                        Taylor worked with her VHPD employment coach to polish her résumé, search for jobs, practice for interviews, dress for success, and mentally prepare for the rigors of job hunting and working.
-                    </p><p class="intro-text">
-
-                    “He was like, ‘you’re dressed, ready to go, ready for a job. Dress like you’re going to work. It will happen,’” Taylor said.
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-
-
-<!-- jannet hall and blur -->
-<div class="slide " >
-    <div class="image jannet-photos-caption "></div>
-
-</div>
-
-<div class="slide " >
-    <div class="image jannet-photos-caption blur"></div>
-    <div class="intro-body">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <p class="intro-text">
-                        Four months after enrolling in VHPD, Taylor found a job that helped her earn enough money to afford her rent and bills.
-                    </p><p class="intro-text">
-
-                    Only 19 percent of VHPD participants in Texas had full-time jobs when they entered the program compared with 41 percent six months to a year after exiting it.
-                </p><p class="intro-text">
-
-                Many of the veterans VHPD served could not work because of service-connected disabilities. Caseworkers helped them navigate through the system and get them signed up to receive the compensation they earned. 
-            </p>
-        </div>
-    </div>
-</div>
-</div>
-</div>
-
-
-
-
-
-
-
-<!-- outer-va text blur slide -->
-<div class="slide" >
-    <div class="image outer-VA-text blur"></div>
-    <div class="intro-body">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-10 col-md-offset-1" style="overflow:auto;">
-                 <p class="intro-text">But none of this was possible without the collaborative work of the organizations on the ground.
-                 </p><p class="intro-text">
-
-                 In Central Texas, The Salvation Army, which had an established presence in all five target counties and a history of working on large-scale projects, was selected to manage and run VHPD.
-             </p><p class="intro-text">
-
-             The VA partner was the Central Texas Veterans Health Care System, located in Killeen, where Fort Hood lies. The program also involved the Killeen Heights Vet Center, where outreach workers contacted and enrolled veterans in need.
-         </p><p class="intro-text">
-
-         The Department of Labor’s partner was the Texas Veterans Commission, which oversaw veteran-specific employment specialists.
-     </p><p class="intro-text">
-
-     The partners collaborated to create a service plan to meet the needs of veterans and provide dedicated staff to run the program.
- </p><p class="intro-text">
-
- The agencies also worked together to develop a plan for all enrolled veterans, who were required to meet with their case managers from each agency regularly and work the plan.
-</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<!-- outer-va setup slide -->
-<div class="slide" >
-    <div class="image outer-VA-text "></div>
-
-</div>
-
-<!-- 4-up vimeo video blur slide -->
-<div class="slide" >
-    <div class="image outer-VA-text blur"></div>
-    <div class="intro-body">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 video-wrapper video-four">
-                    <iframe id="weinberg-frame"  data-src="https://player.vimeo.com/video/143894247" width="100%" height="600" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
-                </div>
-                <div class="col-md-6 video-wrapper video-four">
-                    <iframe id="wood-frame" data-src="https://player.vimeo.com/video/143894447" width="100%" height="600" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
+        <div class="slide">
+            <div class="image jannet-hand-caption blur"></div>
+            <div class="intro-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <p class="intro-text">From there, a case worker from The Salvation Army set up short-term financial supports that helped her pay for her rent and utility bills.</p>
+                            <p class="intro-text">The caseworker also sent a letter to Taylor’s landlord explaining what VHPD was and how it was going to ensure the rent got paid on time.</p>
+                            <p class="intro-text">With eviction staved off, Taylor’s next challenge was to find the income she needed to pay for her housing and living expenses.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-6 video-wrapper video-four">
-                    <iframe id="butts-frame" data-src="https://player.vimeo.com/video/143894523" width="100%" height="600" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
+        </div><!-- jannet hand and blur -->
+        <div class="slide">
+            <div class="image jannet-hand-caption"></div>
+        </div><!-- jannet hall and blur -->
+        <div class="slide">
+            <div class="image jannet-hall-caption"></div>
+        </div>
+        <div class="slide">
+            <div class="image jannet-hall-caption blur"></div>
+            <div class="intro-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <p class="intro-text">Taylor worked with her VHPD employment coach to polish her résumé, search for jobs, practice for interviews, dress for success, and mentally prepare for the rigors of job hunting and working.</p>
+                            <p class="intro-text">“He was like, ‘you’re dressed, ready to go, ready for a job. Dress like you’re going to work. It will happen,’” Taylor said.</p>
+                        </div>
+                    </div>
                 </div>
-                <div  class="col-md-6 video-wrapper video-four">
-                    <iframe id="ridings-frame" data-src="https://player.vimeo.com/video/143894619" width="100%" height="600" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
+            </div>
+        </div><!-- jannet hall and blur -->
+        <div class="slide">
+            <div class="image jannet-photos-caption"></div>
+        </div>
+        <div class="slide">
+            <div class="image jannet-photos-caption blur"></div>
+            <div class="intro-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <p class="intro-text">Four months after enrolling in VHPD, Taylor found a job that helped her earn enough money to afford her rent and bills.</p>
+                            <p class="intro-text">Only 19 percent of VHPD participants in Texas had full-time jobs when they entered the program compared with 41 percent six months to a year after exiting it.</p>
+                            <p class="intro-text">Many of the veterans VHPD served could not work because of service-connected disabilities. Caseworkers helped them navigate through the system and get them signed up to receive the compensation they earned.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- outer-va text blur slide -->
+        <div class="slide">
+            <div class="image outer-VA-text blur"></div>
+            <div class="intro-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1" style="overflow:auto;">
+                            <p class="intro-text">But none of this was possible without the collaborative work of the organizations on the ground.</p>
+                            <p class="intro-text">In Central Texas, The Salvation Army, which had an established presence in all five target counties and a history of working on large-scale projects, was selected to manage and run VHPD.</p>
+                            <p class="intro-text">The VA partner was the Central Texas Veterans Health Care System, located in Killeen, where Fort Hood lies. The program also involved the Killeen Heights Vet Center, where outreach workers contacted and enrolled veterans in need.</p>
+                            <p class="intro-text">The Department of Labor’s partner was the Texas Veterans Commission, which oversaw veteran-specific employment specialists.</p>
+                            <p class="intro-text">The partners collaborated to create a service plan to meet the needs of veterans and provide dedicated staff to run the program.</p>
+                            <p class="intro-text">The agencies also worked together to develop a plan for all enrolled veterans, who were required to meet with their case managers from each agency regularly and work the plan.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- outer-va setup slide -->
+        <div class="slide">
+            <div class="image outer-VA-text"></div>
+        </div><!-- 4-up vimeo video blur slide -->
+        <div class="slide">
+            <div class="image outer-VA-text blur"></div>
+            <div class="intro-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 video-wrapper video-four">
+                            <iframe allowfullscreen="" data-src="https://player.vimeo.com/video/143894247" frameborder="0" height="600" id="weinberg-frame" name="weinberg-frame" width="100%"></iframe>
+                        </div>
+                        <div class="col-md-6 video-wrapper video-four">
+                            <iframe allowfullscreen="" data-src="https://player.vimeo.com/video/143894447" frameborder="0" height="600" id="wood-frame" name="wood-frame" width="100%"></iframe>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 video-wrapper video-four">
+                            <iframe allowfullscreen="" data-src="https://player.vimeo.com/video/143894523" frameborder="0" height="600" id="butts-frame" name="butts-frame" width="100%"></iframe>
+                        </div>
+                        <div class="col-md-6 video-wrapper video-four">
+                            <iframe allowfullscreen="" data-src="https://player.vimeo.com/video/143894619" frameborder="0" height="600" id="ridings-frame" name="ridings-frame" width="100%"></iframe>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-
-<div class="slide" >
-    <div class="image tx-road-caption blur"></div>
-    <div class="intro-body">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2 center-block-text">
-
-                    <!-- <h2>Veterans' Housing at Follow-up Interviews</h2> -->
-                    <p>Stepping back and looking at VHPD as a whole, one sees that the program offers some promising, but not conclusive, results:</p>
-<p>
-•   Across all sites, 75 percent of clients who entered the demonstration were at risk of homelessness and 25 percent were homeless.  When they exited, 85 percent were stably housed.  
-</p>
-<p>
-•   Six months after exiting, 76 percent of all study participants were in their own place, 18 percent lived with someone else, and 6 percent were homeless. About 10 percent of those interviewed at follow-up had experienced homelessness since the baseline interview.
-</p>
-<p>
-•   Only 25 percent of VHPD clients were working at program entry compared with 43 percent at follow-up interviews.
-</p>
-<p>
-•   Average monthly income increased from $1,076 at entry to $1,519 at follow-up interviews.
-</p>
-<p>
-However, because of the lack of a comparison group in the evaluation study, it is impossible to attribute these results to the program.  
-</p>
-<p>
-Before expanding homelessness prevention programs, we need to know more about how to efficiently target assistance to those most likely to become homeless. The next steps are developing better targeting tools, testing approaches using an experimental design (treatment and control groups), and understanding the return on investment for these efforts.  
-</p>
-<!-- <table class="tableizer-table">
+        <div class="slide">
+            <div class="image tx-road-caption blur"></div>
+            <div class="intro-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2 center-block-text">
+                            <!-- <h2>Veterans' Housing at Follow-up Interviews</h2> -->
+                            <p>Stepping back and looking at VHPD as a whole, one sees that the program offers some promising, but not conclusive, results:</p>
+                            <p>• Across all sites, 75 percent of clients who entered the demonstration were at risk of homelessness and 25 percent were homeless. When they exited, 85 percent were stably housed.</p>
+                            <p>• Six months after exiting, 76 percent of all study participants were in their own place, 18 percent lived with someone else, and 6 percent were homeless. About 10 percent of those interviewed at follow-up had experienced homelessness since the baseline interview.</p>
+                            <p>• Only 25 percent of VHPD clients were working at program entry compared with 43 percent at follow-up interviews.</p>
+                            <p>• Average monthly income increased from $1,076 at entry to $1,519 at follow-up interviews.</p>
+                            <p>However, because of the lack of a comparison group in the evaluation study, it is impossible to attribute these results to the program.</p>
+                            <p>Before expanding homelessness prevention programs, we need to know more about how to efficiently target assistance to those most likely to become homeless. The next steps are developing better targeting tools, testing approaches using an experimental design (treatment and control groups), and understanding the return on investment for these efforts.</p><!-- <table class="tableizer-table">
     <tr class="tableizer-firstrow"><td class="first-col"><h3>Housing</h3></td><td>All sites</td><td>Central Texas</td><td>San Diego</td><td>Tacoma</td><td>Tampa</td><td>Upstate Northern New York</td></tr>
 <tr><td class="first-col">In own place</td><td>75.8%</td><td>86.6%</td><td>73.0%</td><td>78.0%</td><td>66.0%</td><td>73.6%</td></tr>
 <tr><td class="first-col">Staying in someone else's place</td><td>17.6%</td><td>9.3%</td><td>20.5%</td><td>17.5%</td><td>24.5%</td><td>17.3%</td></tr>
@@ -897,138 +633,94 @@ $("td").addClass(function(td){
 </script>
 
 -->
-
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<!-- outer-va text blur slide -->
-<div class="slide" >
-    <div class="image tx-road-caption darker"></div>
-    <div class="intro-body">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                   <p class="intro-text">What happened in Central Texas shows strong potential for the strategies employed during the VHPD program. But what does that mean in the broader context of the campaign to end homelessness?
-
-
-                   </p>
-               </div>
-           </div>
-       </div>
-   </div>
-</div>
-
-<!-- ch4-title -->
-<div class="slide " >
-    <div>
-        <!-- full screen video code via demosthenes.info -->
-        <video class="full-screen darker" autoplay="" loop="" poster="../img/ch-4-title.jpg">
-            <source src="video/Chapter4_v1-compressed.mp4" type="video/mp4">
-                <source src="video/Chapter4_v1-compressed.webm" type="video/webm">
-                    Your browser does not support the video tag.
-                </video> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- outer-va text blur slide -->
+        <div class="slide">
+            <div class="image tx-road-caption darker"></div>
+            <div class="intro-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <p class="intro-text">What happened in Central Texas shows strong potential for the strategies employed during the VHPD program. But what does that mean in the broader context of the campaign to end homelessness?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- ch4-title -->
+        <div class="slide">
+            <div>
+                <!-- full screen video code via demosthenes.info -->
+                <video autoplay="" class="full-screen darker" loop="" poster="../img/ch-4-title.jpg"><source src="video/Chapter4_v1-compressed.mp4" type="video/mp4"> <source src="video/Chapter4_v1-compressed.webm" type="video/webm"> Your browser does not support the video tag.</video>
             </div>
             <div class="intro-body text-center">
                 <div class="container">
-                    <div class="row " >
+                    <div class="row">
                         <div class="col-md-8 col-md-offset-2">
-                           <h4 class="chapter-kicker">Chapter 4</h4> <h1 class="brand-heading">A Promising Future</h1>
-                       </div>
-                   </div>
-               </div>
-           </div>
-       </div>
-
-
-       <!-- keyboard text and blur -->
-       <div class="slide " >
-        <div class="image jannet-keyboard-caption "></div>
-        
-    </div>
-
-    <div class="slide " >
-        <div class="image jannet-keyboard-caption blur"></div>
-        <div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <p class="intro-text">
-                            From November 2012 to September 2014, Taylor worked at the VA as an integral part of its Vocational Rehabilitation Therapy program in Temple, Texas.
-                        </p><p class="intro-text">
-
-                        Using her background in the military and social services, as well as her personal experiences, Taylor helped veterans wrestle with the kinds of job-seeking challenges she had faced just months earlier. 
-                    </p>
-
-                </p>
+                            <h4 class="chapter-kicker">Chapter 4</h4>
+                            <h1 class="brand-heading">A Promising Future</h1>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div><!-- keyboard text and blur -->
+        <div class="slide">
+            <div class="image jannet-keyboard-caption"></div>
         </div>
-    </div>
-</div>
-</div>
-
-
-
-
-<!-- work text and blur -->
-<div class="slide " >
-    <div class="image jannet-work-caption "></div>
-
-</div>
-
-<div class="slide " >
-    <div class="image jannet-work-caption blur"></div>
-    <div class="intro-body">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <p class="intro-text">
-                        Today, Taylor works as a VA medical support assistant. Answering phone calls from veterans every day, she helps connect them with the medical professionals and facilities that can treat their physical and mental wounds.
-                    </p><p class="intro-text">
-
-                    Helping veterans in need makes Taylor feel good because she understands how easily a stroke of bad luck, or past wounds, can hamstring someone who has given so much for their country.
-                </p>
-
-            </p>
+        <div class="slide">
+            <div class="image jannet-keyboard-caption blur"></div>
+            <div class="intro-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <p class="intro-text">From November 2012 to September 2014, Taylor worked at the VA as an integral part of its Vocational Rehabilitation Therapy program in Temple, Texas.</p>
+                            <p class="intro-text">Using her background in the military and social services, as well as her personal experiences, Taylor helped veterans wrestle with the kinds of job-seeking challenges she had faced just months earlier.</p>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- work text and blur -->
+        <div class="slide">
+            <div class="image jannet-work-caption"></div>
         </div>
-    </div>
-</div>
-</div>
-</div>
-
-
-
-
-
-<!-- car text and blur -->
-<div class="slide " >
-    <div class="image jannet-car-caption blur"></div>
-    <div class="intro-body">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <p class="intro-text">
-                        “I am in a good place now,” Taylor said. “That program was part of putting me in a good place. Yes, I had some difficult times, but then, I guess without the rain, you can’t enjoy the sunshine.”
-                    </p>
+        <div class="slide">
+            <div class="image jannet-work-caption blur"></div>
+            <div class="intro-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <p class="intro-text">Today, Taylor works as a VA medical support assistant. Answering phone calls from veterans every day, she helps connect them with the medical professionals and facilities that can treat their physical and mental wounds.</p>
+                            <p class="intro-text">Helping veterans in need makes Taylor feel good because she understands how easily a stroke of bad luck, or past wounds, can hamstring someone who has given so much for their country.</p>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- car text and blur -->
+        <div class="slide">
+            <div class="image jannet-car-caption blur"></div>
+            <div class="intro-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <p class="intro-text">“I am in a good place now,” Taylor said. “That program was part of putting me in a good place. Yes, I had some difficult times, but then, I guess without the rain, you can’t enjoy the sunshine.”</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-<div class="slide " >
-    <div class="image jannet-car-caption "></div>
-
-</div>
-
-<!-- going-forward img 
+        <div class="slide">
+            <div class="image jannet-car-caption"></div>
+        </div><!-- going-forward img 
 <div class="slide" >
     <div class="image going-forward "></div>
     <p class="block-text bottom right ap">(AP Photo/Eric Gay)
     </p>
 </div>-->
-<!-- going-forward text blur slide 
+        <!-- going-forward text blur slide 
 <div class="slide" >
     <div class="image going-forward blur"></div>
     <div class="intro-body">
@@ -1042,15 +734,13 @@ $("td").addClass(function(td){
         </div>
     </div>
 </div>-->
-
-
-<!-- going-forward img 
+        <!-- going-forward img 
 <div class="slide" >
     <div class="image going-forward "></div>
     <p class="block-text bottom right ap">(AP Photo/Eric Gay)
     </p>
 </div>-->
-<!-- going-forward text blur slide 
+        <!-- going-forward text blur slide 
 <div class="slide" >
     <div class="image going-forward blur"></div>
     <div class="intro-body">
@@ -1064,14 +754,12 @@ $("td").addClass(function(td){
         </div>
     </div>
 </div>-->
-
-<!-- jannet-daughter-text-1 text blur slide 
+        <!-- jannet-daughter-text-1 text blur slide 
 <div class="slide" >
     <div class="image jannet-daughter-text "></div>
 </div>
 -->
-
-<!-- jannet-daughter-text-1 text blur slide 
+        <!-- jannet-daughter-text-1 text blur slide 
 <div class="slide" >
     <div class="image jannet-daughter-text blur"></div>
     <div class="intro-body">
@@ -1085,8 +773,7 @@ $("td").addClass(function(td){
         </div>
     </div>
 </div>-->
-
-<!-- jannet-daughter-text-1 text blur slide 
+        <!-- jannet-daughter-text-1 text blur slide 
 <div class="slide" >
     <div class="image jannet-daughter-text blur"></div>
     <div class="intro-body">
@@ -1107,135 +794,85 @@ And if the lessons from VHPD carry forward into future efforts, then the path to
 </div>
 </div>
 </div>-->
-
-
-<!-- closing jannet-daughter-text-1 text blur slide -->
-<div class="slide" >
-    <div class="image jannet-daughter-text"></div>
-    
-</div>
-
-<!-- closing jannet-daughter-text-1 text blur slide -->
-<div class="slide" >
-    <div class="image jannet-daughter-text blur"></div>
-    <div class="intro-body">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <p class="intro-text">Ending homelessness among veterans is a difficult, but not impossible, task.
-                    </p><p class="intro-text">
-                    Preventing homelessness or making it as brief as possible is critical to the effort. It’s also the hardest to understand.  More research is needed, but VHPD provides promising results and lessons learned that merit further exploration.
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-</div>
-</div>
-
-
-<!-- closing jannet-daughter-text-1 text blur slide -->
-<div class="slide" >
-    <div class="image jannet-daughter-text blur"></div>
-    <div class="intro-body">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <p class="intro-text">To learn more about VHPD and veterans homelessness, <a href="http://www.urban.org/" target="_blank">read the research</a>. 
-
-                    </p>
-                    <p class="text-center">  <a  style="margin: 0 auto;" href="http://www.urban.org" title="Home" rel="home" class="logo blue-black md"></a></p>
-
+        <!-- closing jannet-daughter-text-1 text blur slide -->
+        <div class="slide">
+            <div class="image jannet-daughter-text"></div>
+        </div><!-- closing jannet-daughter-text-1 text blur slide -->
+        <div class="slide">
+            <div class="image jannet-daughter-text blur"></div>
+            <div class="intro-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <p class="intro-text">Ending homelessness among veterans is a difficult, but not impossible, task.</p>
+                            <p class="intro-text">Preventing homelessness or making it as brief as possible is critical to the effort. It’s also the hardest to understand. More research is needed, but VHPD provides promising results and lessons learned that merit further exploration.</p>
+                        </div>
+                    </div>
                 </div>
-
             </div>
-
-        </div>
-    </div>
-</div>
-
-
-
-
-
-
-
-
-
-</div>
-<!-- about slide -->
-<div class="about-slide"  >
-    <div class="image credits blur"></div>
-    <div class="intro-body" style="padding-top:50px;">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 ">
-                    <h1 class="brand-heading">About This Project</h1>
-                    <p class="intro-text">The Urban Institute’s Housing Assistance Matters Initiative is funded by Housing Authority Insurance, Inc. (HAI, Inc.), to provide fact-based analysis about public and assisted housing. We are grateful to them and to all our funders, who make it possible for Urban to advance its mission. 
-                    </p><p class="intro-text">
-                    The views expressed are those of the authors and should not be attributed to the Urban Institute, its trustees, or its funders. Funders do not determine our research findings or the insights and recommendations of our experts. Further information on the Urban Institute’s funding principles is available at <a href="http://www.urban.org/support" target="_blank">www.urban.org/support</a>.
-                </p>
-                <h2>Project Credits</h2>
-                <h4>Research</h4>
-                <p class=""><a href="http://www.urban.org/author/mary-k-cunningham" target="_blank">Mary K. Cunningham</a>, <a href="http://www.urban.org/author/jennifer-biess" target="_blank">Jennifer Biess</a>, <a href="http://www.urban.org/author/dina-emam" target="_blank">Dina Emam</a>, and <a href="http://www.urban.org/author/martha-r-burt" target="_blank">Martha R. Burt</a></p>
-
-
-                <h4>Photography and Video</h4>
-                <p>
-                    <a href="http://www.urban.org/author/matthew-johnson" target="_blank">Matthew Johnson</a> and <a href="http://www.urban.org/author/lydia-thompson" target="_blank">Lydia Thompson</a></p>
-
-
-                    <h4>Development and Design</h4>
-                    <p>
-                        <a href="http://www.urban.org/author/tim-meko" target="_blank">Tim Meko</a></p>
-
-                        <h4>Editorial</h4>
-                        <p class=""><a href="http://www.urban.org/author/elizabeth-forney" target="_blank">Elizabeth Forney</a></p>
-
-                        <p class="text-center" >
-                            <a id="return-feature" href="#"><button class="btn-lg start-btn" style="margin-top:20px !important;">RETURN TO FEATURE</button></a>
-                        </p>
-
-                        <p class="copy" id="photos-about">Associated Press photos from Robert Ray, Stephen B. Morton, Mark Wilson, Paul Morigi, as well as an official White House photo by Pete Souza were used in this presentation</p>
-
-                        <p class="copy">Copyright © <a href="http://www.urban.org" target="_blank">Urban Institute</a> November 2015.  <a href="https://github.com/urbaninstitute/homeless-veterans" target="_blank">View this on GitHub.</a>
-                        </p>
+        </div><!-- closing jannet-daughter-text-1 text blur slide -->
+        <div class="slide">
+            <div class="image jannet-daughter-text blur"></div>
+            <div class="intro-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <p class="intro-text">To learn more about VHPD and veterans homelessness, <a href="http://www.urban.org/" target="_blank">read the research</a>.</p>
+                            <p class="text-center"><a class="logo blue-black md" href="http://www.urban.org" rel="home" style="margin: 0 auto;" title="Home"></a></p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-
-    <!-- Custom Theme JavaScript 
+    </div><!-- about slide -->
+    <div class="about-slide">
+        <div class="image credits blur"></div>
+        <div class="intro-body" style="padding-top:50px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="brand-heading">About This Project</h1>
+                        <p class="intro-text">The Urban Institute’s Housing Assistance Matters Initiative is funded by Housing Authority Insurance, Inc. (HAI, Inc.), to provide fact-based analysis about public and assisted housing. We are grateful to them and to all our funders, who make it possible for Urban to advance its mission.</p>
+                        <p class="intro-text">The views expressed are those of the authors and should not be attributed to the Urban Institute, its trustees, or its funders. Funders do not determine our research findings or the insights and recommendations of our experts. Further information on the Urban Institute’s funding principles is available at <a href="http://www.urban.org/support" target="_blank">www.urban.org/support</a>.</p>
+                        <h2>Project Credits</h2>
+                        <h4>Research</h4>
+                        <p class=""><a href="http://www.urban.org/author/mary-k-cunningham" target="_blank">Mary K. Cunningham</a>, <a href="http://www.urban.org/author/jennifer-biess" target="_blank">Jennifer Biess</a>, <a href="http://www.urban.org/author/dina-emam" target="_blank">Dina Emam</a>, and <a href="http://www.urban.org/author/martha-r-burt" target="_blank">Martha R. Burt</a></p>
+                        <h4>Photography and Video</h4>
+                        <p><a href="http://www.urban.org/author/matthew-johnson" target="_blank">Matthew Johnson</a> and <a href="http://www.urban.org/author/lydia-thompson" target="_blank">Lydia Thompson</a></p>
+                        <h4>Development and Design</h4>
+                        <p><a href="http://www.urban.org/author/tim-meko" target="_blank">Tim Meko</a></p>
+                        <h4>Editorial</h4>
+                        <p class=""><a href="http://www.urban.org/author/elizabeth-forney" target="_blank">Elizabeth Forney</a></p>
+                        <p class="text-center"><a href="#" id="return-feature"><button class="btn-lg start-btn" style="margin-top:20px !important;">RETURN TO FEATURE</button></a></p>
+                        <p class="copy" id="photos-about">Associated Press photos from Robert Ray, Stephen B. Morton, Mark Wilson, Paul Morigi, as well as an official White House photo by Pete Souza were used in this presentation</p>
+                        <p class="copy">Copyright © <a href="http://www.urban.org" target="_blank">Urban Institute</a> November 2015. <a href="https://github.com/urbaninstitute/homeless-veterans" target="_blank">View this on GitHub.</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- jQuery -->
+    <script src="js/jquery.js">
+    </script> <!-- Bootstrap Core JavaScript -->
+     
+    <script src="js/bootstrap.min.js">
+    </script> <!-- Plugin JavaScript -->
+     
+    <script src="js/jquery.easing.min.js">
+    </script> <!-- Custom Theme JavaScript 
     <script src="js/grayscale.js"></script>-->
-
-    <!-- Next and back JavaScript 
+     <!-- Next and back JavaScript 
     <script src="js/d3.min.js"></script>-->
-
-<!-- custom analytics -->
-<script src="js/urban-analytics.min.js"></script>
-
-    <!-- Next and back JavaScript -->
-    <script src="js/veterans.js"></script>
-
-
-    <script src="../lib/modernizr.svg.min.js"></script>
-
-    <script src="js/header.js" type="text/javascript"></script>
-
-
-
+     <!-- custom analytics -->
+     
+    <script src="js/urban-analytics.min.js">
+    </script> <!-- Next and back JavaScript -->
+     
+    <script src="js/veterans.js">
+    </script> 
+    <script src="../lib/modernizr.svg.min.js">
+    </script> 
+    <script src="js/header.js" type="text/javascript">
+    </script> 
     <script>
     (function (i, s, o, g, r, a, m) {
         i['GoogleAnalyticsObject'] = r;
@@ -1252,8 +889,5 @@ And if the lessons from VHPD carry forward into future efforts, then the path to
     ga('create', 'UA-57529944-1', 'auto');
     ga('send', 'pageview');
     </script>
-
-
 </body>
-
 </html>
