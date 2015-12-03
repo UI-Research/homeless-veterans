@@ -9,7 +9,7 @@
 
 
         position: fixed;
-        top:-50px;
+        /*top:-50px;*/
         left: 0;
         width: 100%;
         background: #000;
@@ -128,10 +128,10 @@
         border: 1px solid #e6e5e5;
         position: absolute;
         top: 49px;
-        left: -146px;
+        left: -91px;
         padding: 0 0 9px;
         border-top: 0;
-        width: 200px;
+        width: 147px;
     }
     
     #header-pinned .share-icons .addthis_toolbox {
